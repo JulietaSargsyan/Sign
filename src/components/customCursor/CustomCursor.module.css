@@ -1,0 +1,22 @@
+.cursor__circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .cursor__dot {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 1001;
+    transition: transform 0.05s ease-out;
+  }
+  

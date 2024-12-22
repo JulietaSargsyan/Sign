@@ -1,0 +1,31 @@
+.buttonContainer {
+    display: inline-block;
+    position: relative;
+    width: 230px;
+    height: 52px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-top: 52px;
+    border-radius: 90px;
+    margin-top: -20px;
+}
+
+.button {
+  width: 230px;
+  height: 52px;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid black;
+  transform: translate(-8px, -8px);
+  transition: all 0.2s ease;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 900;
+  border-radius: 90px;
+  font-family: 'Mosk', sans-serif;
+}
+
+.button:hover {
+  transform: translate(-1px, -1px);
+}

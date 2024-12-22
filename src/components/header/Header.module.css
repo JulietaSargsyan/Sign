@@ -1,0 +1,16 @@
+ .logo {
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    top: 66px;
+    /* margin-top: 160px; */
+    z-index: 2;
+    margin-left: 13%;
+    background: transparent
+  }
+  
+  .logoImage {
+    object-fit: contain;
+    transition: filter 0.3s ease-in-out;
+    margin-left: -22px;
+  }

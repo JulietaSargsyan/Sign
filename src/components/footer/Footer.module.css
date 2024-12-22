@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 14px 0;
+}
+
+.social {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: black
+}

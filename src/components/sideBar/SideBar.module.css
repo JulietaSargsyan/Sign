@@ -1,0 +1,54 @@
+.sideBar {
+    width: 5vh;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 0 179px;
+    background-color: white;
+    z-index: 2;
+}
+
+.burgerMenu {
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .burgerMenu div {
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Open State Styles */
+  .burgerMenu.open div:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .burgerMenu.open div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burgerMenu.open div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .sideBar__navListItem {
+    writing-mode: vertical-rl;
+    font-family: 'Mosk', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
