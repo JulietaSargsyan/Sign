@@ -3,9 +3,8 @@
     position: relative;
     width: 230px;
     height: 52px;
-    border: 1px solid #fff;
     cursor: pointer;
-    margin-top: 52px;
+    /* margin-top: 52px; */
     border-radius: 90px;
     margin-top: -20px;
 }
@@ -28,4 +27,12 @@
 
 .button:hover {
   transform: translate(-1px, -1px);
+}
+
+.light {
+  border: 1px solid #000000;
+}
+
+.dark {
+  border: 1px solid #ffffff;
 }

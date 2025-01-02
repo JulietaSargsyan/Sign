@@ -82,3 +82,47 @@ html {
   position: absolute;
   bottom: 0;
 }
+
+
+/* Who we are section */
+.whoWeAreSection__container .upTitle{
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.whoWeAreSection__container .title {
+  margin: 50px 0;
+}
+
+.whoWeAreSection__container .desc {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.whoWeAreSection__image-container {
+  height: 690px;
+  border-radius: 300px 300px 40px 40px;
+  overflow: hidden;
+}
+
+.whoWeAreSection__container {
+  z-index: 3;
+}
+
+.whoWeAreSection__container, .whoWeAreSection__image-container {
+  position: absolute;
+}
+
+.whoWeAreSection__image-container {
+  right: 7%;
+}
+
+.whoWeAreSection__button-container {
+  width: 35%;
+  height: 60px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}

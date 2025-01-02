@@ -46,3 +46,12 @@
 .light {
     background-color: white;
 }
+
+
+/* Who We Are Section */
+.whoWeAreSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 6%;
+}

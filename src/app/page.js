@@ -17,24 +17,35 @@ export default function HomePage() {
   return (
     <>
       {/* {showIntro && <IntroPage onAnimationEnd={handleAnimationEnd} />} */}
-        <Section sectionName='heroSection'>
+        <Section sectionName='heroSection'  id='heroSection'>
           <div className="heroSection-container">
             <p className="hip">hello there! we&apos;re a</p>
-            <h1 className="title">design studio</h1>
+            <h2 className="title">design studio</h2>
             <p className="description">that specializes in giving your startup or existing business a bold, stylish, fresh, and competitive look. If you&apos;re<br /> skeptical about our claims, why not take a look at
             </p>
             <div className="starShape-container">
               <Image src='/whitestarshape.png' alt="flkfldf" width={61} height={85} className="star-shape" />
               <Image src='/whiterounds.png' alt='ldk'  width={61} height={50} className="star-round" />
             </div>
-            <Button />
+            <Button theme='dark'/>
           </div>
         </Section>
-        <Section theme='light'>
-          <p className="">We’re creative professionals driving<br /> brands to the</p>
+        <Section theme='light' sectionName='whoWeAreSection' id='whoWeAreSection'>
+          <div className="whoWeAreSection__container">
+            <p className="upTitle" style={{color: 'black'}}>We&apos;re creative professionals driving<br /> brands to the</p>
+            <h2 className="title" style={{color: 'black'}}>young & bold</h2>
+            <p className="desc">Are You Keeping Up?</p>
+            <div className="whoWeAreSection__button-container">
+              <Button theme='light'/>
+              {/* <Image src='/strangeCross.png' width={37} height={42} alt="" /> */}
+            </div>
+          </div>
+          <div className="whoWeAreSection__image-container">
+            <Image src='/menWorking.png' width={612} height={690} alt="" ></Image>
+          </div>
         </Section>
-        <Section theme='light'>what weve done</Section>
-        <Section theme='light'>what we cn do</Section>
+        <Section theme='light' id='whatWeveDoneSection'>what weve done</Section>
+        <Section theme='light' id='whatWeCanDoSection'>what we cn do</Section>
     </>
   );
 }

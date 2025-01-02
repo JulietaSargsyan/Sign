@@ -21,10 +21,10 @@ function SideBar() {
         <div></div>
       </div>
       <Image src='/sideBarCross.png' alt='sign cross' width={14} height={14}/>
-      <Link className={styles.sideBar__navListItem} href="../../app/page/HomePage#section">hi there</Link>
-      <Link className={styles.sideBar__navListItem} href="../../app/page/HomePage#section">who we are</Link>
-      <Link className={styles.sideBar__navListItem} href="../../app/page/HomePage#section">what we&apos;ve done</Link>
-      <Link className={styles.sideBar__navListItem} href="../../app/page/HomePage#section">what we can do</Link>
+      <Link className={styles.sideBar__navListItem} href="#heroSection">hi there</Link>
+      <Link className={styles.sideBar__navListItem} href="#whoWeAreSection">who we are</Link>
+      <Link className={styles.sideBar__navListItem} href="#whatWeveDoneSection">what we&apos;ve done</Link>
+      <Link className={styles.sideBar__navListItem} href="#whatWeCanDoSection">what we can do</Link>
     </div>
   )
 }
