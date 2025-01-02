@@ -8,15 +8,15 @@ import Image from "next/image";
 import Button from "../components/button/Button";
 
 export default function HomePage() {
-  // const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(true);
 
-  // const handleAnimationEnd = () => {
-  //   setShowIntro(false);
-  // };
+  const handleAnimationEnd = () => {
+    setShowIntro(false);
+  };
 
   return (
     <>
-      {/* {showIntro && <IntroPage onAnimationEnd={handleAnimationEnd} />} */}
+      {showIntro && <IntroPage onAnimationEnd={handleAnimationEnd} />}
         <Section sectionName='heroSection'  id='heroSection'>
           <div className="heroSection-container">
             <p className="hip">hello there! we&apos;re a</p>
