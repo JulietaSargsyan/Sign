@@ -1,31 +1,36 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './CustomCursor.module.css';
 
 export default function CustomCursor() {
-    const circleRef = useRef(null);
-    const dotRef = useRef(null);
-  
-    useEffect(() => {
-      const handleMouseMove = (e) => {
-        if (circleRef.current && dotRef.current) {
-          circleRef.current.style.transform = `translate(${e.clientX - 20}px, ${e.clientY - 20}px)`;
-          dotRef.current.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`;
-        }
-      };
-  
-      window.addEventListener('mousemove', handleMouseMove);
-  
-      return () => {
-        window.removeEventListener('mousemove', handleMouseMove);
-      };
-    }, []);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   return (
     <>
-      <div className={styles.cursor__circle}></div>
-      <div className={styles.cursor__dot}></div>
+      {["cursor__circle", "cursor__dot"].map((className) => (
+        <div
+          key={className}
+          className={styles[className]}
+          style={{
+            top: `${position.y}px`,
+            left: `${position.x}px`,
+            pointerEvents: "none",
+            zIndex: 9999,
+          }}
+        ></div>
+      ))}
     </>
   );
 }
