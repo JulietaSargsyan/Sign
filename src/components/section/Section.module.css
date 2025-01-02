@@ -1,10 +1,10 @@
 .section {
     height: 100vh;
     padding-left: 13%;
+    display: flex;
 }
 
 .heroSection {
-    display: flex;
     align-items: left;
     background-color: #1e1e1e;
     position: relative;
@@ -50,8 +50,30 @@
 
 /* Who We Are Section */
 .whoWeAreSection {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 6%;
+}
+
+
+/* What We've Done Section */
+.whatWeveDoneSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 0;
+}
+
+.whatWeveDoneSection div {
+    display: flex;
+    gap: 30px;
+}
+
+.whatWeveDoneSection p {
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin-top: 20px;
 }

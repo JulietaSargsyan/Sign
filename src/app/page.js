@@ -37,14 +37,34 @@ export default function HomePage() {
             <p className="desc">Are You Keeping Up?</p>
             <div className="whoWeAreSection__button-container">
               <Button theme='light'/>
-              {/* <Image src='/strangeCross.png' width={37} height={42} alt="" /> */}
             </div>
           </div>
           <div className="whoWeAreSection__image-container">
             <Image src='/menWorking.png' width={612} height={690} alt="" ></Image>
           </div>
         </Section>
-        <Section theme='light' id='whatWeveDoneSection'>what weve done</Section>
+        <Section theme='light' sectionName='whatWeveDoneSection' id='whatWeveDoneSection'>
+          <div>
+            <Link href=''>
+              <Image src='/portfolio1.png' alt="brandName" width={611} height={374}/>
+              <p>Restart Garden</p>
+            </Link>
+            <Link href=''>
+              <Image src='/portfolio2.png' alt="brandName" width={611} height={374}/>
+              <p>Restart Garden</p>
+            </Link>
+          </div>
+          <div>
+            <Link href=''>
+              <Image src='/portfolio3.png' alt="brandName" width={611} height={374}/>
+              <p>Restart Garden</p>
+            </Link>
+            <Link href=''>
+              <Image src='/portfolio4.png' alt="brandName" width={611} height={374}/>
+              <p>Restart Garden</p>
+            </Link>
+          </div>
+        </Section>
         <Section theme='light' id='whatWeCanDoSection'>what we cn do</Section>
     </>
   );
