@@ -19,6 +19,7 @@
 body {
   font-family: var(--font-noto-sans);
   position: relative;
+  overflow-x: hidden;
 }
 
 html {
@@ -106,7 +107,7 @@ html {
 }
 
 .whoWeAreSection__container {
-  z-index: 3;
+  z-index: 1;
 }
 
 .whoWeAreSection__container, .whoWeAreSection__image-container {

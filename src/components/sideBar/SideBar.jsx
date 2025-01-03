@@ -4,18 +4,13 @@ import {useState} from 'react';
 import Link from 'next/link';
 import styles from './SideBar.module.css';
 import Image from 'next/image';
+import NavBar from '../navigation/NavBar';
 // import cross from '@/sideBarCross.png'
 
-function SideBar() {
-  const [open, setOpen] = useState(false);
-
-  const handleToggle = () => {
-    setOpen(!open);
-  };
-
+function SideBar({ open, handleClick }) {
   return (
     <div className={styles.sideBar}>
-      <div className={`${styles.burgerMenu} ${open ? styles.open : ''}`} onClick={handleToggle}>
+      <div className={`${styles.burgerMenu} ${open ? styles.open : ''}`} onClick={handleClick}>
         <div></div>
         <div></div>
         <div></div>

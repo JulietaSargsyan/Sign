@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ open }) => {
   const [logoColor, setLogoColor] = useState('light');
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Header = () => {
       if (currentSection) {
         const isLightBG = window.getComputedStyle(currentSection).backgroundColor === 'rgb(255, 255, 255)';
         console.log(window.getComputedStyle(currentSection).backgroundColor)
-        setLogoColor(isLightBG ? 'dark' : 'light');
+        setLogoColor(open || isLightBG ? 'dark' : 'light');
       }
     };
 
@@ -32,7 +32,7 @@ const Header = () => {
     handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [open]);
 
   return (
       <Link href="/#homePage" className={styles.logo} passHref>
