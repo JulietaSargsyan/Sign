@@ -2,10 +2,13 @@
 import path from 'path';
 
 const nextConfig = {
-    webpack: (config) => {
-        config.resolve.alias['@'] = path.resolve('./src');
-        return config;
-      },
+  output: "export",
+  basePath: "/Sign",
+  assetPrefix: "/Sign",
+  webpack: (config) => {
+    config.resolve.alias['@'] = path.resolve('./src');
+    return config;
+  },
 };
 
 export default nextConfig;
