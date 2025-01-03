@@ -27,7 +27,7 @@ export default function HomePage() {
               <Image src='/whitestarshape.png' alt="flkfldf" width={61} height={85} className="star-shape" />
               <Image src='/whiterounds.png' alt='ldk'  width={61} height={50} className="star-round" />
             </div>
-            <Button theme='dark'/>
+            <Button theme='dark' text='see what we do'/>
           </div>
         </Section>
         <Section theme='light' sectionName='whoWeAreSection' id='whoWeAreSection'>
@@ -36,7 +36,7 @@ export default function HomePage() {
             <h2 className="title" style={{color: 'black'}}>young & bold</h2>
             <p className="desc">Are You Keeping Up?</p>
             <div className="whoWeAreSection__button-container">
-              <Button theme='light'/>
+              <Button theme='light' text='see what we do'/>
             </div>
           </div>
           <div className="whoWeAreSection__image-container">
@@ -65,7 +65,28 @@ export default function HomePage() {
             </Link>
           </div>
         </Section>
-        <Section theme='light' id='whatWeCanDoSection'>what we cn do</Section>
+        <Section theme='light' id='whatWeCanDoSection' sectionName='whatWeCanDoSection'>
+          <div className="whatWeCanDoSection__container">
+            <p className="upTitle" style={{color: 'black'}}>We&apos;re creative professionals driving<br /> brands to the</p>
+            <h2 className="title" style={{color: 'black'}}>what we do</h2>
+            <p className="desc">Are You Keeping Up?</p>
+          </div>
+          <div className="whatWeCanDoSection__listsSection">
+            <div className="lists">
+              <ul>
+                <li>Social Media Marketing</li>
+                <li>UI/UX Web Design</li>
+                <li>Web Development</li>
+              </ul>
+              <ul>
+                <li>Branding</li>
+                <li>Graphic Design</li>
+                <li>Logo Design</li>
+              </ul>
+            </div>
+            <Button  theme='light' text='see all services'/>
+          </div>
+        </Section>
     </>
   );
 }

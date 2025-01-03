@@ -77,3 +77,9 @@
     color: black;
     margin-top: 20px;
 }
+
+.whatWeCanDoSection {
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 160px;
+}

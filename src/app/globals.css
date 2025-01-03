@@ -84,17 +84,17 @@ html {
 
 
 /* Who we are section */
-.whoWeAreSection__container .upTitle{
+.whoWeAreSection__container .upTitle, .whatWeCanDoSection__container .upTitle{
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.whoWeAreSection__container .title {
+.whoWeAreSection__container .title, .whatWeCanDoSection__container .title {
   margin: 50px 0;
 }
 
-.whoWeAreSection__container .desc {
+.whoWeAreSection__container .desc .whatWeCanDoSection__container .desc {
   font-size: 18px;
   font-weight: 400;
 }
@@ -124,4 +124,20 @@ html {
   display: flex;
   align-items: center;
   margin-top: 80px;
+}
+
+.whatWeCanDoSection__listsSection {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+}
+
+.whatWeCanDoSection__listsSection .lists {
+  display: flex;
+  gap: 250px;
+  margin-bottom: 60px;
+}
+
+.whatWeCanDoSection__listsSection .lists ul {
+  list-style: none;
 }
