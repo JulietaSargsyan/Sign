@@ -1,0 +1,27 @@
+.about-us-section {
+  padding: 13%;
+  background-color: white;
+}
+
+.services-list-container {
+    margin-top: 80px;
+}
+.services-list-container__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+    padding: 22px 0;
+}
+
+.services-list-container__item:last-child {
+    border-bottom: 1px solid black;
+}
+
+.services-list-container__item h3 {
+    width: 40%;
+}
+
+.services-list-container__item p {
+    width: 60%;
+}

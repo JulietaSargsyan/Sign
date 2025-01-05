@@ -27,7 +27,7 @@ export default function HomePage() {
               <Image src='/whitestarshape.png' alt="flkfldf" width={61} height={85} className="star-shape" />
               <Image src='/whiterounds.png' alt='ldk'  width={61} height={50} className="star-round" />
             </div>
-            <Button theme='dark' text='see what we do'/>
+            <Button theme='dark' text='see what we do' href='#whatWeveDoneSection'/>
           </div>
         </Section>
         <Section theme='light' sectionName='whoWeAreSection' id='whoWeAreSection'>
@@ -36,7 +36,7 @@ export default function HomePage() {
             <h2 className="title" style={{color: 'black'}}>young & bold</h2>
             <p className="desc">Are You Keeping Up?</p>
             <div className="whoWeAreSection__button-container">
-              <Button theme='light' text='see what we do'/>
+              <Button theme='light' text='see what we do' href='#whatWeveDoneSection'/>
             </div>
           </div>
           <div className="whoWeAreSection__image-container">
@@ -84,7 +84,7 @@ export default function HomePage() {
                 <li>Logo Design</li>
               </ul>
             </div>
-            <Button  theme='light' text='see all services'/>
+            <Button  theme='light' text='see all services' href='/about'/>
           </div>
         </Section>
     </>
