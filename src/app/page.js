@@ -84,7 +84,7 @@ export default function HomePage() {
                 <li>Logo Design</li>
               </ul>
             </div>
-            <Button  theme='light' text='see all services' href='/about'/>
+            <Button  theme='light' text='see all services' href='/services'/>
           </div>
         </Section>
     </>
