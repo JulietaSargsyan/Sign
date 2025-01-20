@@ -23,16 +23,16 @@ const metadata = {
 export default function RootLayout({ children }) {
   const [open, setOpen] = useState(false);
 
-  const handleToggle = () => {
-    setOpen(!open);
+  const handleToggle = (close = null) => {
+    close ? setOpen(false) : setOpen(!open);
   };
   return (
     <html lang="en">
       <body className={notoSans.variable}>
         <CustomCursor />
-        <Header open={open}/>
+        <Header  open={open} handleClick={handleToggle}/>
         <SideBar open={open} handleClick={handleToggle}/>
-        <NavBar open={open}/>
+        <NavBar  open={open} handleClick={handleToggle}/>
         <main>{children}</main>
         <Footer />
       </body>

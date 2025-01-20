@@ -10,16 +10,16 @@ import NavBar from '../navigation/NavBar';
 function SideBar({ open, handleClick }) {
   return (
     <div className={styles.sideBar}>
-      <div className={`${styles.burgerMenu} ${open ? styles.open : ''}`} onClick={handleClick}>
+      <div className={`${styles.burgerMenu} ${open ? styles.open : ''}`} onClick={() => handleClick()}>
         <div></div>
         <div></div>
         <div></div>
       </div>
       <Image src='/sideBarCross.png' alt='sign cross' width={14} height={14}/>
-      <Link className={styles.sideBar__navListItem} href="#heroSection">hi there</Link>
-      <Link className={styles.sideBar__navListItem} href="#whoWeAreSection">who we are</Link>
-      <Link className={styles.sideBar__navListItem} href="#whatWeveDoneSection">what we&apos;ve done</Link>
-      <Link className={styles.sideBar__navListItem} href="#whatWeCanDoSection">what we can do</Link>
+      <Link onClick={(e) => handleClick(e.target)} className={styles.sideBar__navListItem} href="#heroSection">hi there</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="#whoWeAreSection">who we are</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="#whatWeveDoneSection">what we&apos;ve done</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="#whatWeCanDoSection">what we can do</Link>
     </div>
   )
 }

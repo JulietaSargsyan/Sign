@@ -3,14 +3,14 @@ import Link from 'next/link'
 import styles from './NavBar.module.css'
 import Footer from '../footer/Footer'
 
-function NavBar({ open }) {
+function NavBar({ open, handleClick }) {
   return (
     <nav className={`${styles.navigation} ${open ? styles.open : ''}`}>
       <ul>
-        <li><Link href=''>about us</Link></li>
-        <li><Link href=''>portfolio</Link></li>
-        <li><Link href='/services'>services</Link></li>
-        <li><Link href=''>contact us</Link></li>
+        <li><Link onClick={() => handleClick()} href=''>about us</Link></li>
+        <li><Link onClick={() => handleClick()} href=''>portfolio</Link></li>
+        <li><Link onClick={() => handleClick()} href='/services'>services</Link></li>
+        <li><Link onClick={() => handleClick()} href=''>contact us</Link></li>
       </ul>
     </nav>
   )

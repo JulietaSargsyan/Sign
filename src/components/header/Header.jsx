@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from "./Header.module.css";
 
-const Header = ({ open }) => {
+const Header = ({ open, handleClick }) => {
   const [logoColor, setLogoColor] = useState('light');
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Header = ({ open }) => {
   }, [open]);
 
   return (
-      <Link href="/#homePage" className={styles.logo} passHref>
+      <Link href="/#homePage" onClick={() => handleClick()} className={styles.logo} passHref>
         <Image 
           src={logoColor === 'light' ? '/SignWhite.png' : '/SignBlack.png'}
           alt='Sign Digital logo' 
