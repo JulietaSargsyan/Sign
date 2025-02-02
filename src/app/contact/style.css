@@ -1,0 +1,25 @@
+.contact-us-page__button-container {
+    width: 35%;
+    height: 60px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .contact-us-page__container .upTitle {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  .contact-us-page__container .title {
+    margin: 50px 0;
+    text-transform: capitalize;
+  }
+  
+  .contact-us-page__container .desc {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }

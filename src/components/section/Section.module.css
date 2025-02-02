@@ -83,3 +83,9 @@
     flex-direction: column;
     margin-right: 160px;
 }
+
+.contact-us-page {
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 160px;
+}
