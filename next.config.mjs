@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 import path from 'path';
 
+const repoName = 'Sign';
+
 const nextConfig = {
-  output: "export",
-  basePath: "/Sign",
-  assetPrefix: "/Sign",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
+  images: {
+    unoptimized: true,
+  },
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve('./src');
     return config;

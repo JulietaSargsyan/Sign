@@ -16,10 +16,10 @@ function SideBar({ open, handleClick }) {
         <div></div>
       </div>
       <Image src='/sideBarCross.png' alt='sign cross' width={14} height={14}/>
-      <Link onClick={(e) => handleClick(e.target)} className={styles.sideBar__navListItem} href="#heroSection">hi there</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="#whoWeAreSection">who we are</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="#whatWeveDoneSection">what we&apos;ve done</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="#whatWeCanDoSection">what we can do</Link>
+      <Link onClick={(e) => handleClick(e.target)} className={styles.sideBar__navListItem} href="/#heroSection">hi there</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="/#whoWeAreSection">who we are</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="/#whatWeveDoneSection">what we&apos;ve done</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="/#whatWeCanDoSection">what we can do</Link>
     </div>
   )
 }
