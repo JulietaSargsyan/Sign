@@ -24,8 +24,8 @@ export default function HomePage() {
             <p className="description">that specializes in giving your startup or existing business a bold, stylish, fresh, and competitive look. If you&apos;re<br /> skeptical about our claims, why not take a look at
             </p>
             <div className="starShape-container">
-              <Image src='/whitestarshape.png' alt="flkfldf" width={61} height={85} className="star-shape" />
-              <Image src='/whiterounds.png' alt='ldk'  width={61} height={50} className="star-round" />
+              <Image src='https://julietasargsyan.github.io/Sign/whitestarshape.png' alt="flkfldf" width={61} height={85} className="star-shape" />
+              <Image src='https://julietasargsyan.github.io/Sign/whiterounds.png' alt='ldk'  width={61} height={50} className="star-round" />
             </div>
             <Button theme='dark' text='see what we do' href='#whatWeveDoneSection'/>
           </div>
@@ -40,27 +40,27 @@ export default function HomePage() {
             </div>
           </div>
           <div className="whoWeAreSection__image-container">
-            <Image src='/menWorking.png' width={612} height={690} alt="" ></Image>
+            <Image src='https://julietasargsyan.github.io/Sign/menWorking.png' width={612} height={690} alt="" ></Image>
           </div>
         </Section>
         <Section theme='light' sectionName='whatWeveDoneSection' id='whatWeveDoneSection'>
           <div>
             <Link href=''>
-              <Image src='/portfolio1.png' alt="brandName" width={611} height={374}/>
+              <Image src='https://julietasargsyan.github.io/Sign/portfolio1.png' alt="brandName" width={611} height={374}/>
               <p>Restart Garden</p>
             </Link>
             <Link href=''>
-              <Image src='/portfolio2.png' alt="brandName" width={611} height={374}/>
+              <Image src='https://julietasargsyan.github.io/Sign/portfolio2.png' alt="brandName" width={611} height={374}/>
               <p>Restart Garden</p>
             </Link>
           </div>
           <div>
             <Link href=''>
-              <Image src='/portfolio3.png' alt="brandName" width={611} height={374}/>
+              <Image src='https://julietasargsyan.github.io/Sign/portfolio3.png' alt="brandName" width={611} height={374}/>
               <p>Restart Garden</p>
             </Link>
             <Link href=''>
-              <Image src='/portfolio4.png' alt="brandName" width={611} height={374}/>
+              <Image src='https://julietasargsyan.github.io/Sign/portfolio4.png' alt="brandName" width={611} height={374}/>
               <p>Restart Garden</p>
             </Link>
           </div>
