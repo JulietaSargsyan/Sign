@@ -37,7 +37,7 @@ const Header = ({ open, handleClick }) => {
   return (
       <Link href="/#homePage" onClick={() => handleClick()} className={styles.logo} passHref>
         <Image 
-          src={logoColor === 'light' ? '/SignWhite.png' : '/SignBlack.png'}
+          src={logoColor === 'light' ? 'https://julietasargsyan.github.io/Sign/SignWhite.png' : 'https://julietasargsyan.github.io/Sign/SignBlack.png'}
           alt='Sign Digital logo' 
           width={140}
           height={44}
