@@ -1,36 +1,53 @@
-'use client'
+'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './CustomCursor.module.css';
 
 export default function CustomCursor() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const cursorRef = useRef(null);
+  const dotRef = useRef(null);
+
+  const positionRef = useRef({ x: 0, y: 0 });
+  const requestRef = useRef();
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
+  useEffect(() => {
+    const lerp = (start, end, amt) => start + (end - start) * amt;
+
+    const animate = () => {
+      // Smooth transition
+      positionRef.current.x = lerp(positionRef.current.x, mousePosition.x, 0.1);
+      positionRef.current.y = lerp(positionRef.current.y, mousePosition.y, 0.1);
+
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate3d(${positionRef.current.x}px, ${positionRef.current.y}px, 0) translate(-50%, -50%)`;
+      }
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate3d(${mousePosition.x}px, ${mousePosition.y}px, 0) translate(-50%, -50%)`;
+      }
+
+      requestRef.current = requestAnimationFrame(animate);
+    };
+
+    requestRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(requestRef.current);
+  }, [mousePosition]);
+
   return (
     <>
-      {["cursor__circle", "cursor__dot"].map((className) => (
-        <div
-          key={className}
-          className={styles[className]}
-          style={{
-            top: `${position.y}px`,
-            left: `${position.x}px`,
-            pointerEvents: "none",
-            zIndex: 9999,
-          }}
-        ></div>
-      ))}
+      <div ref={cursorRef} className={styles.cursor__circle}></div>
+      <div ref={dotRef} className={styles.cursor__dot}></div>
     </>
   );
 }

@@ -6,8 +6,6 @@
     position: fixed;
     pointer-events: none;
     z-index: 1000;
-    transform: translate(-50%, -50%);
-    transition: top 0.2s ease-out;
     mix-blend-mode: difference;
   }
   
@@ -19,8 +17,6 @@
     position: fixed;
     pointer-events: none;
     z-index: 1001;
-    transform: translate(-50%, -50%);
-    transition: top 0.8s ease-out;
     mix-blend-mode: difference;
   }
   
