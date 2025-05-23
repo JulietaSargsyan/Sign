@@ -15,11 +15,11 @@ function SideBar({ open, handleClick }) {
         <div></div>
         <div></div>
       </div>
-      <Image src='https://julietasargsyan.github.io/Sign/sideBarCross.png' alt='sign cross' width={14} height={14}/>
-      <Link onClick={(e) => handleClick(e.target)} className={styles.sideBar__navListItem} href="/#heroSection">hi there</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="/#whoWeAreSection">who we are</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="/#whatWeveDoneSection">what we&apos;ve done</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="/#whatWeCanDoSection">what we can do</Link>
+      <Image src='/sideBarCross.png' alt='sign cross' width={14} height={14}/>
+      <Link onClick={(e) => handleClick(e.target)} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#heroSection">hi there</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whoWeAreSection">who we are</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whatWeveDoneSection">what we&apos;ve done</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whatWeCanDoSection">what we can do</Link>
     </div>
   )
 }
