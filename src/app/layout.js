@@ -26,11 +26,16 @@ export default function RootLayout({ children }) {
   const handleToggle = (close = null) => {
     close ? setOpen(false) : setOpen(!open);
   };
+
+  const closeNavBar = (close = null) => {
+    setOpen(false);
+  };
+  
   return (
     <html lang="en">
       <body className={notoSans.variable}>
         <CustomCursor />
-        <Header  open={open} handleClick={handleToggle}/>
+        <Header  open={open} handleClick={closeNavBar}/>
         <SideBar open={open} handleClick={handleToggle}/>
         <NavBar  open={open} handleClick={handleToggle}/>
         <main>{children}</main>
