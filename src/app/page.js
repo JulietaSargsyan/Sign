@@ -1,33 +1,37 @@
 'use client'
 
 import { useState } from "react";
-import IntroPage from "../components/intro/IntroPage";
-import Section from "../components/section/Section";
 import Link from "next/link";
 import Image from "next/image";
+
+import Section from "../components/section/Section";
 import Button from "../components/button/Button";
 
+import signStarImg from '../assets/Sign_Star.svg';
+import whiteRounds from '../assets/whiterounds.png';
+import menWorking from '../assets/menWorking.png';
+import portfolio1 from '../assets/portfolio1.png';
+import portfolio2 from '../assets/portfolio2.png';
+import portfolio3 from '../assets/portfolio3.png';
+import portfolio4 from '../assets/portfolio4.png';
+
 export default function HomePage() {
-  const [showIntro, setShowIntro] = useState(true);
-
-  const handleAnimationEnd = () => {
-    setShowIntro(false);
-  };
-
   return (
     <>
-      {showIntro && <IntroPage onAnimationEnd={handleAnimationEnd} />}
         <Section sectionName='heroSection'  id='heroSection'>
           <div className="heroSection-container">
             <p className="hip">hello there! we&apos;re a</p>
             <h2 className="title">design studio</h2>
             <p className="description">that specializes in giving your startup or existing business a bold, stylish, fresh, and competitive look. If you&apos;re<br /> skeptical about our claims, why not take a look at
             </p>
-            <div className="starShape-container">
-              <Image src='https://julietasargsyan.github.io/Sign/whitestarshape.png' alt="flkfldf" width={61} height={85} className="star-shape" />
-              <Image src='https://julietasargsyan.github.io/Sign/whiterounds.png' alt='ldk'  width={61} height={50} className="star-round" />
+            <div className="btnStarShape">
+              <Button theme='dark' text='see what we do' href='#whatWeveDoneSection'/>
+              <div className="starShape-container">
+                <Image src={signStarImg} alt="flkfldf" width={61} height={85} className="star-shape" />
+                <Image src={whiteRounds} alt='ldk'  width={50} height={50} className="star-round" />
+              </div>
             </div>
-            <Button theme='dark' text='see what we do' href='#whatWeveDoneSection'/>
+            
           </div>
         </Section>
         <Section theme='light' sectionName='whoWeAreSection' id='whoWeAreSection'>
@@ -40,27 +44,27 @@ export default function HomePage() {
             </div>
           </div>
           <div className="whoWeAreSection__image-container">
-            <Image src='https://julietasargsyan.github.io/Sign/menWorking.png' width={612} height={690} alt="" ></Image>
+            <Image src={menWorking} width={612} height={690} alt="" ></Image>
           </div>
         </Section>
         <Section theme='light' sectionName='whatWeveDoneSection' id='whatWeveDoneSection'>
           <div>
             <Link href=''>
-              <Image src='https://julietasargsyan.github.io/Sign/portfolio1.png' alt="brandName" width={611} height={374}/>
+              <Image src={portfolio1} alt="brandName" width={611} height={374}/>
               <p>Restart Garden</p>
             </Link>
             <Link href=''>
-              <Image src='https://julietasargsyan.github.io/Sign/portfolio2.png' alt="brandName" width={611} height={374}/>
+              <Image src={portfolio2} alt="brandName" width={611} height={374}/>
               <p>Restart Garden</p>
             </Link>
           </div>
           <div>
             <Link href=''>
-              <Image src='https://julietasargsyan.github.io/Sign/portfolio3.png' alt="brandName" width={611} height={374}/>
+              <Image src={portfolio3} alt="brandName" width={611} height={374}/>
               <p>Restart Garden</p>
             </Link>
             <Link href=''>
-              <Image src='https://julietasargsyan.github.io/Sign/portfolio4.png' alt="brandName" width={611} height={374}/>
+              <Image src={portfolio4} alt="brandName" width={611} height={374}/>
               <p>Restart Garden</p>
             </Link>
           </div>

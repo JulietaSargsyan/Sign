@@ -24,7 +24,7 @@ const metadata = {
   og: {
     title: "Sign Digital Studio - Creative Web & Branding Solutions",
     description: "Explore our portfolio of web development, UI/UX design, logo creation, and digital marketing projects. Let's build something amazing together.",
-    image: "/preview-image.png",
+    image: "../assets/preview-image.png",
     url: "https://signdigitalstudio.com",
     type: "website"
   }

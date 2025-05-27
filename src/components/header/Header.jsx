@@ -1,9 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef  } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from "./Header.module.css";
+
+import signWhite from '../../assets/SignWhite.png'
+import signBlack from '../../assets/SignBlack.png'
 
 const Header = ({ open, handleClick }) => {
   const [logoColor, setLogoColor] = useState('light');
@@ -35,9 +39,9 @@ const Header = ({ open, handleClick }) => {
   }, [open]);
 
   return (
-      <Link href="/#homePage" onClick={() => handleClick()} className={styles.logo} passHref>
+      <Link href="/" onClick={() => handleClick()} className={styles.logo} passHref>
         <Image 
-          src={logoColor === 'light' ? 'https://julietasargsyan.github.io/Sign/SignWhite.png' : 'https://julietasargsyan.github.io/Sign/SignBlack.png'}
+          src={logoColor === 'light' ? signWhite : signBlack}
           alt='Sign Digital logo' 
           width={140}
           height={44}
