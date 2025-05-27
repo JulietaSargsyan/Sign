@@ -1,0 +1,36 @@
+.introductionContainer {
+    margin-left: -50px;
+}
+
+.meetTheTeamSection__description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meetTheTeamSection__description-title {
+    font-family: Mosk;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.meetTheTeamSection__description-text {
+    width: 711px;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+
+.teamMemberCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 38px;
+}

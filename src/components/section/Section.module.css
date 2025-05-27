@@ -4,7 +4,7 @@
     display: flex;
 }
 
-.heroSection {
+.heroSection, .about-us-section {
     align-items: left;
     background-color: #1e1e1e;
     position: relative;
@@ -13,7 +13,7 @@
     justify-content: center;
 }
 
-.heroSection::before {
+.heroSection::before, .about-us-section::before {
     content: "";
     position: absolute;
     top: -50%;
@@ -88,4 +88,17 @@
     justify-content: center;
     flex-direction: column;
     padding-right: 160px;
+}
+
+.about-us-section {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 13%;
+}
+
+.meetTheTeamSection {
+    justify-content: center;
+    padding-right: 13%;
+    flex-direction: column;
 }
