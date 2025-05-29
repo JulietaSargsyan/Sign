@@ -42,7 +42,7 @@
 .wave {
     width: 0;
     height: 0;
-    background-color: #984DE5;
+    background-color: black;
     border-radius: 50%;
     position: absolute;
     transition: .8s all linear;
