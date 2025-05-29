@@ -13,8 +13,7 @@ import cross from '../../assets/sideBarCross.png'
 function SideBar({ open, handleClick }) {
   return (
     <div className={styles.sideBar}>
-      <motion.button 
-        whileHover={{ scale: 0.9 }} 
+      <motion.button  
         whileTap={{ scale: 1.1 }}
         className={`${styles.burgerMenu} ${open ? styles.open : ''}`} 
         onClick={() => handleClick()}

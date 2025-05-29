@@ -20,7 +20,7 @@
     justify-content: space-between;
     cursor: pointer;
     position: relative;
-    background-color: none;
+    background-color: transparent;
     border: none;
   }
   
@@ -29,6 +29,10 @@
     height: 2px;
     background-color: #000000;
     transition: all 0.3s ease-in-out;
+  }
+
+  .burgerMenu:hover > div {
+    box-shadow: 1px 2px 2px #984DE5;
   }
   
   /* Open State Styles */
