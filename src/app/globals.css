@@ -1,13 +1,35 @@
-:root {
-  --font-noto-sans: 'Noto Sans', sans-serif;
-}
-
+/* Mosk Regular */
 @font-face {
   font-family: 'Mosk';
-  src: url('/fonts/mosk-regular.woff2') format('woff2'),
-       url('/fonts/mosk-regular.woff') format('woff');
+  src: url('https://julietasargsyan.github.io/Sign/fonts/MoskNormal400.woff2') format('woff2'),
+       url('https://julietasargsyan.github.io/Sign/fonts/MoskNormal400.woff') format('woff');
+  font-weight: 400;
   font-weight: normal;
   font-style: normal;
+}
+
+/* Mosk Bold */
+@font-face {
+  font-family: 'Mosk';
+  src: url('https://julietasargsyan.github.io/Sign/fonts/MoskUltra-Bold900.woff2') format('woff2'),
+       url('https://julietasargsyan.github.io/Sign/fonts/MoskUltra-Bold900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Noto Sans Regular */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('https://julietasargsyan.github.io/Sign/fonts/NotoSans-Regular.woff2') format('woff2'),
+       url('https://julietasargsyan.github.io/Sign/fonts/NotoSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-noto-sans: 'Noto Sans', sans-serif;
 }
 
 * {

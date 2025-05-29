@@ -9,7 +9,7 @@
 }
 
 .meetTheTeam-section__description-title {
-    font-family: Mosk;
+    font-family: 'Mosk', sans-serif;
     font-weight: 900;
     font-size: 18px;
     line-height: 100%;
@@ -19,7 +19,7 @@
 
 .meetTheTeam-section__description-text {
     width: 711px;
-    font-family: Noto Sans;
+    font-family: var(--font-noto-sans);
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
