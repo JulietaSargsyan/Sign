@@ -30,10 +30,10 @@ const AboutPage = () => {
         </div>
       </Section>
 
-      <Section theme='light' sectionName='meetTheTeamSection'>
-        <div className='meetTheTeamSection__description'>
-          <p className='meetTheTeamSection__description-title'>Meet The Team<br/>Family Members</p>
-          <p className='meetTheTeamSection__description-text'>If you want to reach thousands of people in a day then it’s time to bring your business to social media platforms. DMS will help you create, manage and improve your social media presence. Our team of creative experts will design strategies and campaigns that will show your business in the best light and increase your brand awareness. You will notice the progress very quickly and be able to monitor it through our monthly reports.</p>
+      <Section theme='light' sectionName='meetTheTeam-section'>
+        <div className='meetTheTeam-section__description'>
+          <p className='meetTheTeam-section__description-title'>Meet The Team<br/>Family Members</p>
+          <p className='meetTheTeam-section__description-text'>If you want to reach thousands of people in a day then it’s time to bring your business to social media platforms. DMS will help you create, manage and improve your social media presence. Our team of creative experts will design strategies and campaigns that will show your business in the best light and increase your brand awareness. You will notice the progress very quickly and be able to monitor it through our monthly reports.</p>
         </div>
         <div className='teamMemberCards'>
           <Card image={teamMember} name='Lusin Sargsyan' position='Art Director'/>
@@ -42,13 +42,13 @@ const AboutPage = () => {
         </div>
       </Section>
 
-      <Section theme='light' sectionName='whatWeCanDoSection'>
-        <div className="whatWeCanDoSection__container">
+      <Section theme='light' sectionName='whatWeCanDo-section'>
+        <div className="whatWeCanDo-section__container">
           <p className="upTitle" style={{color: 'black'}}>We&apos;re creative professionals driving<br /> brands to the</p>
           <h2 className="title" style={{color: 'black'}}>what we do</h2>
           <p className="desc">Are You Keeping Up?</p>
         </div>
-        <div className="whatWeCanDoSection__listsSection">
+        <div className="whatWeCanDo-section__listsSection">
           <div className="lists">
             <ul>
               <li>Social Media Marketing</li>

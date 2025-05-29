@@ -26,7 +26,7 @@ function SideBar({ open, handleClick }) {
       <Link onClick={(e) => handleClick(e.target)} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#heroSection">hi there</Link>
       <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whoWeAreSection">who we are</Link>
       <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whatWeveDoneSection">what we&apos;ve done</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whatWeCanDoSection">what we can do</Link>
+      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whatWeCanDo-section">what we can do</Link>
     </div>
   )
 }

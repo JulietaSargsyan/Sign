@@ -82,7 +82,7 @@
     margin-top: 20px;
 }
 
-.whatWeCanDoSection {
+.whatWeCanDo-section {
     justify-content: center;
     flex-direction: column;
     padding-right: 160px;
@@ -101,7 +101,7 @@
     padding-right: 13%;
 }
 
-.meetTheTeamSection {
+.meetTheTeam-section {
     justify-content: center;
     padding-right: 13%;
     flex-direction: column;

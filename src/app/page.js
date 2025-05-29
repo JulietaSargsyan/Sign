@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect  } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,6 +16,34 @@ import portfolio3 from '../assets/portfolio3.png';
 import portfolio4 from '../assets/portfolio4.png';
 
 export default function HomePage() {
+  useEffect(() => {
+    const sections = Array.from(document.querySelectorAll('div[class*=section]'));
+    let isScrolling = false;
+
+    const handleWheel = (e) => {
+      if (isScrolling) return;
+
+      const currentScroll = window.scrollY;
+      const viewportHeight = window.innerHeight;
+
+      const nextSection = sections.find(
+        (section) => section.offsetTop > currentScroll + 10
+      );
+
+      if (e.deltaY > 0 && nextSection) {
+        isScrolling = true;
+        nextSection.scrollIntoView({ behavior: "smooth" });
+
+        setTimeout(() => {
+          isScrolling = false;
+        }, 100); // prevent over-scroll
+      }
+    };
+
+    window.addEventListener("wheel", handleWheel, { passive: true });
+    return () => window.removeEventListener("wheel", handleWheel);
+  }, []);
+
   return (
     <>
         <Section sectionName='heroSection'  id='heroSection'>
@@ -69,13 +97,13 @@ export default function HomePage() {
             </Link>
           </div>
         </Section>
-        <Section theme='light' id='whatWeCanDoSection' sectionName='whatWeCanDoSection'>
-          <div className="whatWeCanDoSection__container">
+        <Section theme='light' id='whatWeCanDo-section' sectionName='whatWeCanDo-section'>
+          <div className="whatWeCanDo-section__container">
             <p className="upTitle" style={{color: 'black'}}>We&apos;re creative professionals driving<br /> brands to the</p>
             <h2 className="title" style={{color: 'black'}}>what we do</h2>
             <p className="desc">Are You Keeping Up?</p>
           </div>
-          <div className="whatWeCanDoSection__listsSection">
+          <div className="whatWeCanDo-section__listsSection">
             <div className="lists">
               <ul>
                 <li>Social Media Marketing</li>
