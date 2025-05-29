@@ -70,6 +70,10 @@
     gap: 30px;
 }
 
+.whatWeveDoneSection a {
+    cursor: none;
+}
+
 .whatWeveDoneSection p {
     text-decoration: underline;
     font-weight: 400;
