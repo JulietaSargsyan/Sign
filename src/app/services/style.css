@@ -9,19 +9,29 @@
 .services-list-container__item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid black;
+    align-items: flex-start;
+    /* border-top: 1px solid black; */
     padding: 22px 0;
 }
 
-.services-list-container__item:last-child {
+/* .services-list-container__item:last-child {
     border-bottom: 1px solid black;
-}
+} */
 
 .services-list-container__item h3 {
     width: 40%;
+    font-family: 'Mosk', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
 }
 
 .services-list-container__item p {
     width: 60%;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    opacity: 0.6;
 }

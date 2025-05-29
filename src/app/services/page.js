@@ -1,9 +1,12 @@
+'use client'
+
 import React from 'react';
 import './style.css';
+import Section from '@/src/components/section/Section';
 
 const ServicesPage = () => {
   return (
-    <section className='services-section'>
+    <Section sectionName='services-section' >
       <h2 className="title" style={{color: 'black'}}>what we do</h2>
       <div className='services-list-container'>
         <div className='services-list-container__item'>
@@ -23,7 +26,7 @@ const ServicesPage = () => {
           <p>Our branding services help define and elevate your brand&apos;s identity, creating a lasting impression that resonates with your audience. From logo design and brand messaging to visual guidelines and storytelling, we craft cohesive and memorable brand strategies that reflect your values and vision. Whether you&apos;re launching a new brand or refreshing an existing one, we ensure consistency across all touchpoints to build trust, recognition, and loyalty. Let us bring your brand to life and make it stand out in a competitive market.</p>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 
