@@ -57,7 +57,7 @@
 }
 
 .button p {
-  z-index: 9999; 
+  z-index: 2; 
   position: relative;
   transition: 0.9s color ease-in-out
 }
