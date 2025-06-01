@@ -7,7 +7,7 @@ import Image from "next/image";
 import Section from "../components/section/Section";
 import Button from "../components/button/Button";
 
-import signStarImg from '../assets/Sign_Star_Purple.svg';
+import signStarImg from '../assets/Sign_Star.svg';
 import whiteRounds from '../assets/whiterounds.png';
 import menWorking from '../assets/menWorking.png';
 import portfolio1 from '../assets/portfolio1.png';
