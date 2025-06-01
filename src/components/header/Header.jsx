@@ -23,11 +23,9 @@ const Header = ({ open, handleClick }) => {
           currentSection = section;
         }
       });
-      console.log('sections', sections)
 
       if (currentSection) {
         const isLightBG = window.getComputedStyle(currentSection).backgroundColor === 'rgb(255, 255, 255)';
-        console.log(window.getComputedStyle(currentSection).backgroundColor)
         setLogoColor(open || isLightBG ? 'dark' : 'light');
       }
     };
