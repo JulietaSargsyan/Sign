@@ -42,6 +42,7 @@ body {
   font-family: var(--font-noto-sans);
   position: relative;
   overflow-x: hidden;
+  cursor: none;
 }
 
 html {

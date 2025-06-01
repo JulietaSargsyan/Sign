@@ -6,7 +6,8 @@
     /* margin-top: 160px; */
     z-index: 999;
     margin-left: 13%;
-    background: transparent
+    background: transparent;
+    cursor: none;
   }
   
   .logoImage {
