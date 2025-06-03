@@ -1,5 +1,10 @@
 .introductionContainer {
     margin-left: -50px;
+    z-index: 4;
+}
+
+.teamPhotoContainer {
+    z-index: 3;
 }
 
 .meetTheTeam-section__description {
