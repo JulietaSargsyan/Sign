@@ -10,7 +10,7 @@
     align-items: center;
     padding: 38px 0 179px;
     background-color: white;
-    z-index: 5;
+    z-index: 999;
 }
 
 .burgerMenu {
