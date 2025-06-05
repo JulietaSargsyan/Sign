@@ -1,6 +1,6 @@
 'use client'
 
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -9,8 +9,32 @@ import styles from './SideBar.module.css';
 import NavBar from '../navigation/NavBar';
 
 import cross from '../../assets/sideBarCross.png'
+import SideBarLink from './SideBarLink';
 
 function SideBar({ open, handleClick }) {
+  const [notDefined, setNotDefined] = useState(false);
+  const [currentSection, setCurrentSection] = useState('');
+
+  useEffect(() => {
+    const sections = Array.from(document.querySelectorAll('div[class*=section]'));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setCurrentSection(entry.target.id)
+            console.log('section', currentSection)
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    sections.forEach(section => observer.observe(section));
+  }, []);
+
   return (
     <div className={styles.sideBar}>
       <motion.button  
@@ -22,11 +46,10 @@ function SideBar({ open, handleClick }) {
         <div></div>
         <div></div>
       </motion.button>
-      <Image src={cross} alt='sign cross' width={14} height={14}/>
-      <Link onClick={(e) => handleClick(e.target)} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#heroSection">hi there</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whoWeAreSection">who we are</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whatWeveDoneSection">what we&apos;ve done</Link>
-      <Link onClick={handleClick} className={styles.sideBar__navListItem} href="https://julietasargsyan.github.io/Sign/#whatWeCanDo-section">what we can do</Link>
+      <SideBarLink handleClick={handleClick} href='https://julietasargsyan.github.io/Sign/#heroSection'         currentSection={currentSection} text='hi there' />
+      <SideBarLink handleClick={handleClick} href='https://julietasargsyan.github.io/Sign/#whoWeAreSection'     currentSection={currentSection} text='who we are' />
+      <SideBarLink handleClick={handleClick} href='https://julietasargsyan.github.io/Sign/#whatWeveDoneSection' currentSection={currentSection} text='what we&apos;ve done' />
+      <SideBarLink handleClick={handleClick} href='https://julietasargsyan.github.io/Sign/#whatWeCanDo-section' currentSection={currentSection} text='what we can do' />
     </div>
   )
 }

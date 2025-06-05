@@ -1,3 +1,13 @@
+/* Mosk Light */
+@font-face {
+  font-family: 'Mosk';
+  src: url('https://julietasargsyan.github.io/Sign/fonts/MoskLight300.woff2') format('woff2'),
+       url('https://julietasargsyan.github.io/Sign/fonts/MoskLight300.woff') format('woff');
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Mosk Regular */
 @font-face {
   font-family: 'Mosk';
@@ -6,6 +16,16 @@
   font-weight: 400;
   font-weight: normal;
   font-style: normal;
+}
+
+/* Mosk Medium */
+@font-face {
+  font-family: 'Mosk';
+  src: url('https://julietasargsyan.github.io/Sign/fonts/MoskMedium500.woff2') format('woff2'),
+       url('https://julietasargsyan.github.io/Sign/fonts/MoskMedium500.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Mosk Bold */
