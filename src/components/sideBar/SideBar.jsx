@@ -1,18 +1,12 @@
 'use client'
 
 import {useState, useEffect} from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import styles from './SideBar.module.css';
-import NavBar from '../navigation/NavBar';
-
-import cross from '../../assets/sideBarCross.png'
 import SideBarLink from './SideBarLink';
 
 function SideBar({ open, handleClick }) {
-  const [notDefined, setNotDefined] = useState(false);
   const [currentSection, setCurrentSection] = useState('');
 
   useEffect(() => {
