@@ -9,7 +9,7 @@ import Button from "../components/button/Button";
 
 import signStarImg from '../assets/Sign_Star.svg';
 import whiteRounds from '../assets/whiterounds.png';
-import menWorking from '../assets/menWorking.png';
+import menWorking from '../assets/mensWorking.png';
 import portfolio1 from '../assets/portfolio1.png';
 import portfolio2 from '../assets/portfolio2.png';
 import portfolio3 from '../assets/portfolio3.png';
@@ -72,7 +72,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="whoWeAreSection__image-container">
-            <Image src={menWorking} width={612} height={690} alt="" ></Image>
+            <Image src={menWorking} fill alt="" ></Image>
           </div>
         </Section>
         <Section theme='light' sectionName='whatWeveDoneSection' id='whatWeveDoneSection'>

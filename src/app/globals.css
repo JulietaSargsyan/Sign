@@ -152,9 +152,14 @@ html {
 }
 
 .whoWeAreSection__image-container {
+  width: 612px;
   height: 690px;
   border-radius: 300px 300px 40px 40px;
   overflow: hidden;
+}
+
+.whoWeAreSection__image-container img {
+  object-fit: cover;
 }
 
 .whoWeAreSection__container {
