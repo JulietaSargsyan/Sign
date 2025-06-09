@@ -18,11 +18,11 @@
 }
 
 .navigation ul {
+    width: 50%;
     list-style: none;
 }
 
 .navigation a {
-    text-decoration: none;
     color: black;
     font-family: 'Mosk', sans-serif;
     font-size: 72px;
@@ -30,6 +30,8 @@
     text-transform: uppercase;
     position: relative;
     cursor: none;
+    text-decoration: none;
+    transition: all 5s linear;
 }
 
 .navigation a::after {
@@ -41,9 +43,28 @@
     top: 50%;
     left: 0;
     display: block;
-    transition: width 0.5s linear;
+    transition: width 0.3s linear;
 }
 
-.navigation a:hover::after {
-    width: 550px;
+.navigation__item:hover a::after {
+    width: 100%;
+}
+
+.navigation__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__item img {
+    scale: 0;
+    transition: scale 0.2s ease-in;
+}
+
+.navigation__item:hover img {
+    scale: 1;
+}
+
+.navigation__item img.active {
+    scale: 1;
 }

@@ -1,16 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
 import styles from './NavBar.module.css'
-import Footer from '../footer/Footer'
+
+import signStarImg from '../../assets/Sign_Star_Purple.svg';
+import NavBarItem from './NavBarItem';
 
 function NavBar({ open, handleClick }) {
   return (
     <nav className={`${styles.navigation} ${open ? styles.open : ''}`}>
       <ul>
-        <li><Link onClick={() => handleClick()} href='/about'>about us</Link></li>
-        <li><Link onClick={() => handleClick()} href=''>portfolio</Link></li>
-        <li><Link onClick={() => handleClick()} href='/services'>services</Link></li>
-        <li><Link onClick={() => handleClick()} href='/contact'>contact us</Link></li>
+        <NavBarItem handleClick={handleClick} href='/about' text='about us'/>
+        <NavBarItem handleClick={handleClick} href='' text='portfolio'/>
+        <NavBarItem handleClick={handleClick} href='/services' text='services'/>
+        <NavBarItem handleClick={handleClick} href='/contact' text='contact us'/>
       </ul>
     </nav>
   )

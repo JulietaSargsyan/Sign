@@ -124,6 +124,7 @@ html {
 
 .star-shape {
   animation: rotateAnimation 3s linear infinite;
+  z-index: 2;
 }
 
 @keyframes rotateAnimation {
