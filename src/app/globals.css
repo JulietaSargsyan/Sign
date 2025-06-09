@@ -6,6 +6,7 @@
   font-weight: 400;
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Mosk Regular */
@@ -16,6 +17,7 @@
   font-weight: 400;
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Mosk Medium */
@@ -132,6 +134,14 @@ html {
 .star-round {
   position: absolute;
   bottom: 0;
+}
+
+.heroSection__btns-container {
+  display: flex;
+}
+
+.heroSection__btns-container:first-child a {
+  margin-right: 32px;
 }
 
 

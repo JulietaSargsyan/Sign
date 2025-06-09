@@ -53,7 +53,10 @@ export default function HomePage() {
             <p className="description">that specializes in giving your startup or existing business a bold, stylish, fresh, and competitive look. If you&apos;re<br /> skeptical about our claims, why not take a look at
             </p>
             <div className="btnStarShape">
-              <Button theme='dark' text='see what we do' href='#whatWeveDoneSection'/>
+              <div className="heroSection__btns-container">
+                <Button theme='dark' text='see what we do' href='#whatWeveDoneSection' transparent='true'/>
+                <Button theme='dark' text='fill client brief' href='https://lusinesargsyan845904.typeform.com/to/nVt3yoYM' openNewTab='true'/>
+              </div>
               <div className="starShape-container">
                 <Image src={signStarImg} alt="flkfldf" width={61} height={85} className="star-shape" />
                 <Image src={whiteRounds} alt='ldk'  width={50} height={50} className="star-round" />

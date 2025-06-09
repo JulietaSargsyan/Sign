@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import styles from "./Button.module.css";
 
-function Button({ theme, text, href }) {
+function Button({ theme, text, href, transparent=false, openNewTab=false }) {
   const [isMouseEntered, setIsMouseEntered] = useState(false)
   const [coords, setCoords] = useState({ x: 0, y: 0 });
 
@@ -31,7 +31,7 @@ function Button({ theme, text, href }) {
   };
 
   return (
-    <div>
+    <div className={styles.btnContainer}>
       {isDownload ? (
         <a href={href} download className={`${styles.buttonContainer} ${styles[theme]}`}>
           <button 
@@ -48,7 +48,7 @@ function Button({ theme, text, href }) {
           </button>
         </a>
       ) : (
-        <Link href={href} className={`${styles.buttonContainer} ${styles[theme]}`}>
+        <Link href={href} className={`${styles.buttonContainer} ${styles[theme]} ${transparent ? styles.transparentBG : ''}`} {...(openNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
           <button 
             className={styles.button}
             onMouseEnter={handleMouseEnter}
