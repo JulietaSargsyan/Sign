@@ -40,10 +40,10 @@ function SideBar({ open, handleClick }) {
         <div></div>
         <div></div>
       </motion.button>
-      <SideBarLink handleClick={handleClick} href='https://julietasargsyan.github.io/Sign/#heroSection'         currentSection={currentSection} text='hi there' />
-      <SideBarLink handleClick={handleClick} href='https://julietasargsyan.github.io/Sign/#whoWeAreSection'     currentSection={currentSection} text='who we are' />
-      <SideBarLink handleClick={handleClick} href='https://julietasargsyan.github.io/Sign/#whatWeveDoneSection' currentSection={currentSection} text='what we&apos;ve done' />
-      <SideBarLink handleClick={handleClick} href='https://julietasargsyan.github.io/Sign/#whatWeCanDo-section' currentSection={currentSection} text='what we can do' />
+      <SideBarLink handleClick={handleClick} href='/#heroSection'         currentSection={currentSection} text='hi there' />
+      <SideBarLink handleClick={handleClick} href='/#whoWeAreSection'     currentSection={currentSection} text='who we are' />
+      <SideBarLink handleClick={handleClick} href='/#whatWeveDoneSection' currentSection={currentSection} text='what we&apos;ve done' />
+      <SideBarLink handleClick={handleClick} href='/#whatWeCanDo-section' currentSection={currentSection} text='what we can do' />
     </div>
   )
 }

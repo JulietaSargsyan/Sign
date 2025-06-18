@@ -4,8 +4,6 @@ import path from 'path';
 const repoName = 'Sign';
 
 const nextConfig = {
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
   images: {
     unoptimized: true,
   },

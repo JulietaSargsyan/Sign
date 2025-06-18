@@ -1,8 +1,8 @@
 /* Mosk Light */
 @font-face {
   font-family: 'Mosk';
-  src: url('https://julietasargsyan.github.io/Sign/fonts/MoskLight300.woff2') format('woff2'),
-       url('https://julietasargsyan.github.io/Sign/fonts/MoskLight300.woff') format('woff');
+  src: url('/fonts/MoskLight300.woff2') format('woff2'),
+       url('/fonts/MoskLight300.woff') format('woff');
   font-weight: 400;
   font-weight: normal;
   font-style: normal;
@@ -12,8 +12,8 @@
 /* Mosk Regular */
 @font-face {
   font-family: 'Mosk';
-  src: url('https://julietasargsyan.github.io/Sign/fonts/MoskNormal400.woff2') format('woff2'),
-       url('https://julietasargsyan.github.io/Sign/fonts/MoskNormal400.woff') format('woff');
+  src: url('/fonts/MoskNormal400.woff2') format('woff2'),
+       url('/fonts/MoskNormal400.woff') format('woff');
   font-weight: 400;
   font-weight: normal;
   font-style: normal;
@@ -23,8 +23,8 @@
 /* Mosk Medium */
 @font-face {
   font-family: 'Mosk';
-  src: url('https://julietasargsyan.github.io/Sign/fonts/MoskMedium500.woff2') format('woff2'),
-       url('https://julietasargsyan.github.io/Sign/fonts/MoskMedium500.woff') format('woff');
+  src: url('/fonts/MoskMedium500.woff2') format('woff2'),
+       url('/fonts/MoskMedium500.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -33,8 +33,8 @@
 /* Mosk Bold */
 @font-face {
   font-family: 'Mosk';
-  src: url('https://julietasargsyan.github.io/Sign/fonts/MoskUltra-Bold900.woff2') format('woff2'),
-       url('https://julietasargsyan.github.io/Sign/fonts/MoskUltra-Bold900.woff') format('woff');
+  src: url('/fonts/MoskUltra-Bold900.woff2') format('woff2'),
+       url('/fonts/MoskUltra-Bold900.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -43,8 +43,8 @@
 /* Noto Sans Regular */
 @font-face {
   font-family: 'Noto Sans';
-  src: url('https://julietasargsyan.github.io/Sign/fonts/NotoSans-Regular.woff2') format('woff2'),
-       url('https://julietasargsyan.github.io/Sign/fonts/NotoSans-Regular.woff') format('woff');
+  src: url('/fonts/NotoSans-Regular.woff2') format('woff2'),
+       url('/fonts/NotoSans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
