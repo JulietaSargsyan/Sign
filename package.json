@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export -o docs",
+    "export": "next export",
     "deploy": "npm run build && npm run export && git add . && git commit -m 'Deploy to GitHub Pages' && git push"
   },
   "dependencies": {
