@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
+import { SectionProvider } from '../context/SectionContext';
 import Header from '../components/header/Header.jsx'
 import Footer from '../components/footer/Footer.jsx'
 import SideBar from "../components/sideBar/SideBar";
@@ -43,14 +44,16 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={notoSans.variable}>
-        <CustomCursor />
-        <Header  open={open} handleClick={closeNavBar}/>
-        <SideBar open={open} handleClick={handleToggle}/>
-        <NavBar  open={open} handleClick={handleToggle}/>
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <SectionProvider>
+        <body className={notoSans.variable}>
+          <CustomCursor />
+          <Header  open={open} handleClick={closeNavBar}/>
+          <SideBar open={open} handleClick={handleToggle}/>
+          <NavBar  open={open} handleClick={handleToggle}/>
+          <main>{children}</main>
+          <Footer />
+        </body>
+      </SectionProvider>
     </html>
   );
 }

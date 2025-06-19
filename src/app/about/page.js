@@ -1,7 +1,9 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from "next/image";
+
+import { useSection } from '../../context/SectionContext';
 
 import './style.css'
 import Section from '@/src/components/section/Section';
@@ -9,9 +11,52 @@ import Button from '@/src/components/button/Button';
 
 import teamPhoto from '../../assets/Lusin&Juli.png'
 import Card from '@/src/components/teamMemberCard/Card';
-import teamMember from '../../assets/teamMember.png'
+import Lusine from '../../assets/Lusine.png'
+import Harutyun from '../../assets/Harutyun.png'
+import Julieta from '../../assets/Julieta.png'
 
 const AboutPage = () => {
+  const { currentSection, setCurrentSection } = useSection();
+  
+  useEffect(() => {
+    const sections = Array.from(document.querySelectorAll('div[class*=section]'));
+    let isScrolling = false;
+  
+    const handleWheel = (e) => {
+      if (isScrolling) return;
+  
+      const currentScroll = window.scrollY;
+      const direction = e.deltaY > 0 ? 'down' : 'up';
+  
+      const currentSectionIndex = sections.findIndex(
+        (section) =>
+          currentScroll + 10 >= section.offsetTop &&
+          currentScroll < section.offsetTop + section.offsetHeight
+      );
+  
+      let targetSection;
+      if (direction === 'down') {
+        targetSection = sections[currentSectionIndex + 1];
+      } else {
+        targetSection = sections[currentSectionIndex - 1];
+      }
+  
+      if (targetSection) {
+        isScrolling = true;
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+        setCurrentSection(targetSection.id);
+  
+        setTimeout(() => {
+          isScrolling = false;
+        }, 100);
+      }
+    };
+  
+    window.addEventListener('wheel', handleWheel, { passive: true });
+  
+    return () => window.removeEventListener('wheel', handleWheel);
+  }, []);
+
   return (
     <>
       <Section sectionName='about-us-section'  id='about-us-section'>
@@ -36,9 +81,9 @@ const AboutPage = () => {
           <p className='meetTheTeam-section__description-text'>If you want to reach thousands of people in a day then it’s time to bring your business to social media platforms. DMS will help you create, manage and improve your social media presence. Our team of creative experts will design strategies and campaigns that will show your business in the best light and increase your brand awareness. You will notice the progress very quickly and be able to monitor it through our monthly reports.</p>
         </div>
         <div className='teamMemberCards'>
-          <Card image={teamMember} name='Lusin Sargsyan' position='Art Director'/>
-          <Card image={teamMember} name='Harutyun Yorghanjyan' position='Project Manager'/>
-          <Card image={teamMember} name='Julieta Sargsyan' position='Software Developer'/>
+          <Card image={Lusine} name='Lusin Sargsyan'       position='Chief Executive Officer/Art Director'/>
+          <Card image={Harutyun} name='Harutyun Yorghanjyan' position='Project Manager'/>
+          <Card image={Julieta} name='Julieta Sargsyan' position='Chief Technology Officer'/>
         </div>
       </Section>
 
