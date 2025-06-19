@@ -16,7 +16,7 @@
 .meetTheTeam-section__description-title {
     font-family: 'Mosk', sans-serif;
     font-weight: 900;
-    font-size: 18px;
+    font-size: clamp(0.85rem, 5vw, 1.25rem);
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: capitalize;
@@ -26,7 +26,7 @@
     width: 711px;
     font-family: var(--font-noto-sans);
     font-weight: 400;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 5vw, 0.87rem);
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: capitalize;

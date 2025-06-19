@@ -8,7 +8,7 @@
   }
 
   .contact-us-page__container .upTitle {
-    font-size: 18px;
+    font-size: clamp(0.85rem, 5vw, 1.25rem);
     font-weight: 300;
     text-transform: uppercase;
   }
@@ -19,7 +19,7 @@
   }
   
   .contact-us-page__container .desc {
-    font-size: 18px;
+    font-size: clamp(0.85rem, 5vw, 1.25rem);
     font-weight: 400;
     text-transform: capitalize;
   }

@@ -56,7 +56,7 @@
   .sideBar__navListItem {
     writing-mode: vertical-rl;
     font-family: 'Mosk', sans-serif;
-    font-size: 12px;
+    font-size: clamp(0.65rem, 5vw, 0.75rem);
     font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;

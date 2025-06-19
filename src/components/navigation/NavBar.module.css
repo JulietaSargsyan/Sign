@@ -25,13 +25,13 @@
 .navigation a {
     color: black;
     font-family: 'Mosk', sans-serif;
-    font-size: 72px;
+    font-size: clamp(2rem, 5vw, 4.5rem);
     font-weight: 900;
     text-transform: uppercase;
     position: relative;
     cursor: none;
     text-decoration: none;
-    transition: all 5s linear;
+    /* transition: all 5s linear; */
 }
 
 .navigation a::after {
