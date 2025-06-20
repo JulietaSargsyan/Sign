@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Head from "next/head";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { SectionProvider } from '../context/SectionContext';
@@ -26,13 +27,21 @@ const metadata = {
     title: "Sign Digital Studio - Creative Web & Branding Solutions",
     description: "Explore our portfolio of web development, UI/UX design, logo creation, and digital marketing projects. Let's build something amazing together.",
     image: "../assets/preview-image.png",
-    url: "https://signdigitalstudio.com",
+    url: "https://sign-digital.com",
     type: "website"
   }
 };
 
 export default function RootLayout({ children }) {
   const [open, setOpen] = useState(false);
+  const [isTouch, setIsTouch] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      setIsTouch(hasTouch);
+    }
+  }, []);
 
   const handleToggle = (close = null) => {
     close ? setOpen(false) : setOpen(!open);
@@ -46,7 +55,21 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <SectionProvider>
         <body className={notoSans.variable}>
-          <CustomCursor />
+          <Head>
+            <title>{metadata.title}</title>
+            <meta name="description" content={metadata.description} />
+            <meta name="keywords" content={metadata.keywords} />
+            <meta name="author" content={metadata.author} />
+            <meta name="robots" content={metadata.robots} />
+            <meta name="viewport" content={metadata.viewport} />
+            {/* Open Graph meta tags */}
+            <meta property="og:title" content={metadata.og.title} />
+            <meta property="og:description" content={metadata.og.description} />
+            <meta property="og:image" content={metadata.og.image} />
+            <meta property="og:url" content={metadata.og.url} />
+            <meta property="og:type" content={metadata.og.type} />
+          </Head>
+          {!isTouch && <CustomCursor />}
           <Header  open={open} handleClick={closeNavBar}/>
           <SideBar open={open} handleClick={handleToggle}/>
           <NavBar  open={open} handleClick={handleToggle}/>
