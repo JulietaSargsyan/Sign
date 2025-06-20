@@ -72,3 +72,15 @@
   color: white;
   border-color: white;
 }
+
+@media (max-width: 690px) {
+  .buttonContainer {
+    width: 330px;
+    height: 52px;
+  }
+
+  .button {
+    width: 330px;
+    height: 52px;
+  }
+}

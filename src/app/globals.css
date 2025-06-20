@@ -71,6 +71,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  overflow: hidden;
 }
 
 .heroSection-container {
@@ -86,7 +87,7 @@ html {
 
 .title {
   font-family: 'Mosk', sans-serif;
-  font-size: clamp(3rem, 5vw, 8.25rem);
+  font-size: clamp(2.1rem, 5vw, 8.25rem);
   font-weight: 900;
   color: white;
   text-transform: uppercase;
@@ -210,3 +211,37 @@ html {
   list-style: none;
 }
 
+@media (max-width: 690px) {
+  .heroSection-container {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroSection-container .description {
+    text-align: center;
+  }
+
+  .heroSection__btns-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroSection__btns-container:first-child a {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .btnStarShape {
+    height: auto;
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 690px) {
+
+}

@@ -67,11 +67,12 @@
 
 .whatWeveDoneSection div {
     display: flex;
-    gap: 30px;
+    gap: clamp(15px, 30px, 30px);
 }
 
 .whatWeveDoneSection a {
-    cursor: none;
+    cursor: pointer;
+    
 }
 
 .whatWeveDoneSection p {
@@ -111,4 +112,18 @@
   padding: 13%;
   background-color: white;
   flex-direction: column;
+}
+
+@media (max-width: 770px) {
+  .section {
+    padding: 0 6vw;
+    /* align-items: center; */
+  }
+}
+
+@media (max-width: 690px) {
+  .section {
+    align-items: center;
+    /* align-items: center; */
+  }
 }
