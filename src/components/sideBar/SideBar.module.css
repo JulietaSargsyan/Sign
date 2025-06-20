@@ -80,4 +80,14 @@
   .active img {
     scale: 1
   }
+
+  .touchScreen {
+    background-color: transparent;
+    height: auto;
+    padding: 30px;
+  }
+
+  .white div {
+    background-color: white;
+  }
   

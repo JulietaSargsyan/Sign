@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
     }
   }, []);
 
-  const handleToggle = (close = null) => {
+  const handleToggle = (e, close = null) => {
     close ? setOpen(false) : setOpen(!open);
   };
 
@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
           </Head>
           {!isTouch && <CustomCursor />}
           <Header  open={open} handleClick={closeNavBar}/>
-          <SideBar open={open} handleClick={handleToggle}/>
+          <SideBar open={open} handleClick={handleToggle} isTouch={isTouch}/>
           <NavBar  open={open} handleClick={handleToggle}/>
           <main>{children}</main>
           <Footer />
