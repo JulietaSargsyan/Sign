@@ -15,3 +15,10 @@
     transition: filter 0.3s ease-in-out;
     margin-left: -22px;
   }
+
+  @media (max-width: 690px) {
+    .logo {
+      top: 20px;
+      margin-left: 20px;
+    }
+  }
