@@ -82,9 +82,9 @@ export default function HomePage() {
         </Section>
         <Section theme='light' sectionName='whoWeAreSection' id='whoWeAreSection'>
           <div className="whoWeAreSection__container">
-            <p className="upTitle" style={{color: 'black'}}>We&apos;re creative professionals driving<br /> brands to the</p>
-            <h2 className="title" style={{color: 'black'}}>young & bold</h2>
-            <p className="desc">Are You Keeping Up?</p>
+            <p className="upTitle" style={{color: 'black'}}>WE HELP BRANDS STAND OUT WITH</p>
+            <h2 className="title" style={{color: 'black'}}>strategy and style</h2>
+            <p className="desc">Ready to Lead the Change?</p>
             <div className="whoWeAreSection__button-container">
               <Button theme='light' text='see what we do' href='#whatWeveDoneSection'/>
             </div>
@@ -117,24 +117,31 @@ export default function HomePage() {
         </Section>
         <Section theme='light' id='whatWeCanDo-section' sectionName='whatWeCanDo-section'>
           <div className="whatWeCanDo-section__container">
-            <p className="upTitle" style={{color: 'black'}}>We&apos;re creative professionals driving<br /> brands to the</p>
-            <h2 className="title" style={{color: 'black'}}>what we do</h2>
-            <p className="desc">Are You Keeping Up?</p>
+            <p className="upTitle" style={{color: 'black'}}>WE&apos;RE TRANSFORMING BRANDS INTO<br />IMPACTFUL EXPERIENCES &</p>
+            <h2 className="title" style={{color: 'black'}}>BRINGING IDEAS TO LIFE</h2>
+            <p className="desc">Let&apos;s build what&apos;s next — together.</p>
           </div>
           <div className="whatWeCanDo-section__listsSection">
-            <div className="lists">
-              <ul>
-                <li>Social Media Marketing</li>
-                <li>UI/UX Web Design</li>
-                <li>Web Development</li>
-              </ul>
-              <ul>
-                <li>Branding</li>
-                <li>Graphic Design</li>
-                <li>Logo Design</li>
-              </ul>
+            <div className="lists-container">
+              <div className="lists">
+                <ul>
+                  <li>Digital Marketing</li>
+                  <li>Social Media Campaigns</li>
+                  <li>Performance Advertising</li>
+                </ul>
+                <ul>
+                  <li>Design & Experience</li>
+                  <li>UI/UX Design</li>
+                  <li>Creative Web Development</li>
+                </ul>
+                <ul>
+                  <li>Brand Identity</li>
+                  <li>Visual Branding</li>
+                  <li>Graphic & Logo Design</li>
+                </ul>
+              </div>
+              <Button  theme='light' text='Explore Our Services' href='/services'/>
             </div>
-            <Button  theme='light' text='see all services' href='/services'/>
           </div>
         </Section>
     </>

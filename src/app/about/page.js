@@ -70,15 +70,14 @@ const AboutPage = () => {
         <div className='introductionContainer'>
           <p className="hip">here we are</p>
             <h2 className="title">nice to <br/>meet you</h2>
-            <p className="description">that specializes in giving your startup or existing business a bold, stylish, fresh, and competitive look. If you&apos;re<br /> skeptical about our claims, why not take a look at
-            </p>
+            <p className="description">We&apos;re a team of creative thinkers, strategists, and makers dedicated to helping brands stand out in a crowded world. From concept to execution, we craft digital experiences and visual identities that connect, inspire, and make an impact.</p>
         </div>
       </Section>
 
       <Section theme='light' sectionName='meetTheTeam-section'>
         <div className='meetTheTeam-section__description'>
-          <p className='meetTheTeam-section__description-title'>Meet The Team<br/>Family Members</p>
-          <p className='meetTheTeam-section__description-text'>If you want to reach thousands of people in a day then it’s time to bring your business to social media platforms. DMS will help you create, manage and improve your social media presence. Our team of creative experts will design strategies and campaigns that will show your business in the best light and increase your brand awareness. You will notice the progress very quickly and be able to monitor it through our monthly reports.</p>
+          <p className='meetTheTeam-section__description-title'>Meet The Team<br/></p>
+          <p className='meetTheTeam-section__description-text'>We&apos;re more than a creative team — we&apos;re your collaborators. We partner with brands, big and small, to bring ideas to life with clarity, creativity, and purpose.</p>
         </div>
         <div className='teamMemberCards'>
           <Card image={Lusine} name='Lusin Sargsyan'       position='Chief Executive Officer/Art Director'/>
@@ -94,20 +93,27 @@ const AboutPage = () => {
           <p className="desc">Are You Keeping Up?</p>
         </div>
         <div className="whatWeCanDo-section__listsSection">
-          <div className="lists">
-            <ul>
-              <li>Social Media Marketing</li>
-              <li>UI/UX Web Design</li>
-              <li>Web Development</li>
-            </ul>
-            <ul>
-              <li>Branding</li>
-              <li>Graphic Design</li>
-              <li>Logo Design</li>
-            </ul>
+            <div className="lists-container">
+              <div className="lists">
+                <ul>
+                  <li>Digital Marketing</li>
+                  <li>Social Media Campaigns</li>
+                  <li>Performance Advertising</li>
+                </ul>
+                <ul>
+                  <li>Design & Experience</li>
+                  <li>UI/UX Design</li>
+                  <li>Creative Web Development</li>
+                </ul>
+                <ul>
+                  <li>Brand Identity</li>
+                  <li>Visual Branding</li>
+                  <li>Graphic & Logo Design</li>
+                </ul>
+              </div>
+              <Button  theme='light' text='Explore Our Services' href='/services'/>
+            </div>
           </div>
-          <Button  theme='light' text='see all services' href='/services'/>
-        </div>
       </Section>
     </>
   )

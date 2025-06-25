@@ -201,13 +201,16 @@ html {
 .whatWeCanDo-section__listsSection {
   display: flex;
   flex-direction: column;
-  padding-left: 35vw;
+  align-items: flex-end;
+}
+
+.lists-container {
+  width: 50vw;
 }
 
 .whatWeCanDo-section__listsSection .lists {
-  /* width: 50%; */
   display: flex;
-  gap: 250px;
+  gap: 20px;
   margin-bottom: 60px;
 }
 
