@@ -5,6 +5,7 @@
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
+    touch-action: none;
     z-index: 1000;
     mix-blend-mode: difference;
   }
@@ -16,6 +17,7 @@
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
+    touch-action: none;
     z-index: 1001;
     mix-blend-mode: difference;
   }
