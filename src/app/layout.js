@@ -69,6 +69,7 @@ export default function RootLayout({ children }) {
             <meta property="og:url" content={metadata.og.url} />
             <meta property="og:type" content={metadata.og.type} />
           </Head>
+
           {!isTouch && <CustomCursor />}
           <Header  open={open} handleClick={closeNavBar}/>
           <SideBar open={open} handleClick={handleToggle} isTouch={isTouch}/>

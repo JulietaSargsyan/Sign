@@ -21,43 +21,43 @@ export default function HomePage() {
   const { currentSection, setCurrentSection } = useSection();
 
   useEffect(() => {
-  const sections = Array.from(document.querySelectorAll('div[class*=section]'));
-  let isScrolling = false;
+    const sections = Array.from(document.querySelectorAll('.section'));
+    let isScrolling = false;
 
-  const handleWheel = (e) => {
-    if (isScrolling) return;
+    const handleWheel = (e) => {
+      if (isScrolling) return;
 
-    const currentScroll = window.scrollY;
-    const direction = e.deltaY > 0 ? 'down' : 'up';
+      const currentScroll = window.scrollY;
+      const direction = e.deltaY > 0 ? 'down' : 'up';
 
-    const currentSectionIndex = sections.findIndex(
-      (section) =>
-        currentScroll + 10 >= section.offsetTop &&
-        currentScroll < section.offsetTop + section.offsetHeight
-    );
+      const currentSectionIndex = sections.findIndex(
+        (section) =>
+          currentScroll + 10 >= section.offsetTop &&
+          currentScroll < section.offsetTop + section.offsetHeight
+      );
 
-    let targetSection;
-    if (direction === 'down') {
-      targetSection = sections[currentSectionIndex + 1];
-    } else {
-      targetSection = sections[currentSectionIndex - 1];
-    }
+      let targetSection;
+      if (direction === 'down') {
+        targetSection = sections[currentSectionIndex + 1];
+      } else {
+        targetSection = sections[currentSectionIndex - 1];
+      }
 
-    if (targetSection) {
-      isScrolling = true;
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-      setCurrentSection(targetSection.id);
+      if (targetSection) {
+        isScrolling = true;
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+        setCurrentSection(targetSection.id);
 
-      setTimeout(() => {
-        isScrolling = false;
-      }, 100);
-    }
-  };
+        setTimeout(() => {
+          isScrolling = false;
+        }, 100);
+      }
+    };
 
-  window.addEventListener('wheel', handleWheel, { passive: true });
+    window.addEventListener('wheel', handleWheel, { passive: true });
 
-  return () => window.removeEventListener('wheel', handleWheel);
-}, []);
+    return () => window.removeEventListener('wheel', handleWheel);
+  }, []);
 
   return (
     <>

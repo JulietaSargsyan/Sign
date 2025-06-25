@@ -117,13 +117,11 @@
 @media (max-width: 770px) {
   .section {
     padding: 0 6vw;
-    /* align-items: center; */
   }
 }
 
 @media (max-width: 690px) {
   .section {
     align-items: center;
-    /* align-items: center; */
   }
 }

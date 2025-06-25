@@ -19,7 +19,7 @@ const AboutPage = () => {
   const { currentSection, setCurrentSection } = useSection();
   
   useEffect(() => {
-    const sections = Array.from(document.querySelectorAll('div[class*=section]'));
+    const sections = Array.from(document.querySelectorAll('.section'));
     let isScrolling = false;
   
     const handleWheel = (e) => {
