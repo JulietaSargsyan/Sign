@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <SectionProvider>
-        <body className={notoSans.variable}>
+        <body className={`${notoSans.variable} ${!isTouch ? 'no-cursor' : ''}`}>
           <Head>
             <title>{metadata.title}</title>
             <meta name="description" content={metadata.description} />

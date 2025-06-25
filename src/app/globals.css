@@ -68,6 +68,9 @@ body {
   font-family: var(--font-noto-sans);
   position: relative;
   overflow-x: hidden;
+}
+
+.no-cursor {
   cursor: none;
 }
 
