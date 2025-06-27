@@ -3,14 +3,14 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { useSection } from '../context/SectionContext';
 
 import Section from "../components/section/Section";
 import Button from "../components/button/Button";
+import StarShape from "../components/starShape/StarShape";
 
-import signStarImg from '../assets/Sign_Star.svg';
-import whiteRounds from '../assets/whiterounds.png';
 import menWorking from '../assets/mensWorking.png';
 import portfolio1 from '../assets/portfolio1.png';
 import portfolio2 from '../assets/portfolio2.png';
@@ -72,10 +72,7 @@ export default function HomePage() {
                 <Button theme='dark' text='see what we do' href='#whatWeveDoneSection' transparent='true'/>
                 <Button theme='dark' text='fill client brief' href='https://lusinesargsyan845904.typeform.com/to/nVt3yoYM' openNewTab='true'/>
               </div>
-              <div className="starShape-container">
-                <Image src={signStarImg} alt="flkfldf" width={61} height={85} className="star-shape" />
-                <Image src={whiteRounds} alt='ldk'  width={50} height={50} className="star-round" />
-              </div>
+              <StarShape />
             </div>
             
           </div>
