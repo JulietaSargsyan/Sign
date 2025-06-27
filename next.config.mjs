@@ -7,8 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  distDir: 'docs', 
+  // output: 'export',
+  // distDir: 'docs', 
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve('./src');
     return config;
