@@ -64,20 +64,22 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
-  font-family: var(--font-noto-sans);
-  position: relative;
-  overflow-x: hidden;
-}
-
-.no-cursor {
-  cursor: none;
-}
-
 html {
   scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  font-family: var(--font-noto-sans);
+  position: relative;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+.no-cursor {
+  cursor: none;
 }
 
 .heroSection-container {

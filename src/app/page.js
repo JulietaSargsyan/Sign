@@ -115,7 +115,7 @@ export default function HomePage() {
             </Link>
           </div>
         </Section>
-        <Section theme='light' id='whatWeCanDo-section' sectionName='whatWeCanDo-section'>
+        <Section theme='light' id='whatWeCanDo-section' sectionName='whatWeCanDo-section' isLastSection='true'>
           <div className="whatWeCanDo-section__container">
             <p className="upTitle" style={{color: 'black'}}>WE&apos;RE TRANSFORMING BRANDS INTO<br />IMPACTFUL EXPERIENCES &</p>
             <h2 className="title" style={{color: 'black'}}>BRINGING IDEAS TO LIFE</h2>
