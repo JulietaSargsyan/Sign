@@ -13,7 +13,7 @@
     mix-blend-mode: difference;
   }
 
-  @media (max-width: 690px) {
+  @media (max-width: 770px) {
     .logo {
       top: 20px;
       margin-left: 20px;

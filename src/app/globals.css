@@ -202,6 +202,23 @@ body {
   margin-top: 80px;
 }
 
+#whatWeveDoneSection a {
+    width: 47%;
+}
+
+#whatWeveDoneSection a img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+#whatWeveDoneSection a:hover img {
+  transform: scale(1.03);
+}
+
 .whatWeCanDo-section__listsSection {
   display: flex;
   flex-direction: column;
@@ -220,6 +237,65 @@ body {
 
 .whatWeCanDo-section__listsSection .lists ul {
   list-style: none;
+}
+
+@media (max-width: 1700px) {
+  #whatWeveDoneSection a {
+      width: 40%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .whoWeAreSection__image-container {
+    width: 440px;
+    height: 550px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .whatWeCanDo-section__listsSection {
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .lists-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lists ul {
+    text-align: center;
+  }
+
+  .lists ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 770px) {
+  #whatWeveDoneSection a {
+      width: 95%;
+  }
+  
+  #whatWeveDoneSection div:first-of-type a:first-of-type {
+      margin-top: 70px;
+  }
+
+  .whatWeCanDo-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whatWeCanDo-section__container p.upTitle {
+    text-align: center;
+  }
+
+  .lists ul li {
+    font-size: 16px;
+  }
+  
 }
 
 @media (max-width: 690px) {
@@ -250,5 +326,39 @@ body {
     margin-top: 30px;
     align-items: center;
     flex-direction: column;
+  }
+
+  #whoWeAreSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .whoWeAreSection__image-container, .whoWeAreSection__image-container img {
+    position: static;
+  }
+
+  .whoWeAreSection__image-container img {
+    filter: opacity(60%);
+  }
+
+
+  .whoWeAreSection__container .title, .whatWeCanDo-section__container .title {
+    margin: 15px 0;
+  }
+
+  .title {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .upTitle {
+    font-size: 16px;
   }
 }

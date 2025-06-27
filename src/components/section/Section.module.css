@@ -61,18 +61,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 40px;
     padding-left: 0;
 }
 
 .whatWeveDoneSection div {
     display: flex;
     gap: clamp(15px, 30px, 30px);
+    justify-content: center;
 }
 
 .whatWeveDoneSection a {
     cursor: pointer;
-    
 }
 
 .whatWeveDoneSection p {
@@ -80,7 +80,6 @@
     font-weight: 400;
     font-size: clamp(0.85rem, 2vw, 1rem);
     color: black;
-    margin-top: 20px;
 }
 
 .whatWeCanDo-section {
@@ -117,6 +116,11 @@
 @media (max-width: 770px) {
   .section {
     padding: 0 6vw;
+  }
+
+  .whatWeveDoneSection div {
+    display: flex;
+    flex-direction: column;
   }
 }
 

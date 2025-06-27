@@ -92,22 +92,22 @@ export default function HomePage() {
         </Section>
         <Section theme='light' sectionName='whatWeveDoneSection' id='whatWeveDoneSection'>
           <div>
-            <Link href=''>
-              <Image src={portfolio1} alt="brandName" width={611} height={374}/>
+            <Link href='' className="portfolioItem">
+              <Image src={portfolio1} alt="brandName" width={600} height={350}/>
               <p>Restart Garden</p>
             </Link>
             <Link href=''>
-              <Image src={portfolio2} alt="brandName" width={611} height={374}/>
+              <Image src={portfolio2} alt="brandName" width={600} height={350}/>
               <p>Restart Garden</p>
             </Link>
           </div>
           <div>
             <Link href=''>
-              <Image src={portfolio3} alt="brandName" width={611} height={374}/>
+              <Image src={portfolio3} alt="brandName" width={600} height={350}/>
               <p>Restart Garden</p>
             </Link>
             <Link href=''>
-              <Image src={portfolio4} alt="brandName" width={611} height={374}/>
+              <Image src={portfolio4} alt="brandName" width={600} height={350}/>
               <p>Restart Garden</p>
             </Link>
           </div>
