@@ -50,7 +50,7 @@ export default function HomePage() {
 
         setTimeout(() => {
           isScrolling = false;
-        }, 100);
+        }, 50);
       }
     };
 
