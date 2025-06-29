@@ -25,13 +25,12 @@
 .navigation a {
     color: black;
     font-family: 'Mosk', sans-serif;
-    font-size: clamp(2rem, 5vw, 4.5rem);
+    font-size: clamp(1rem, 5vw, 4.5rem);
     font-weight: 900;
     text-transform: uppercase;
     position: relative;
     cursor: none;
     text-decoration: none;
-    /* transition: all 5s linear; */
 }
 
 .navigation a::after {
@@ -51,9 +50,17 @@
 }
 
 .navigation__item {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.starImgContainer {
+    width: 61px;
+    height: 85px;
+    position: relative;
 }
 
 .navigation__item img {
@@ -67,4 +74,15 @@
 
 .navigation__item img.active {
     scale: 1;
+}
+
+@media (max-width: 550px) {
+  .navigation a::after {
+    height: 2px;
+  }
+
+  .starImgContainer {
+    width: 41px;
+    height: 55px;
+  }
 }

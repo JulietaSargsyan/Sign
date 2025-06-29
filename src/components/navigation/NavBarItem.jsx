@@ -13,7 +13,9 @@ function NavBarItem({ href, text, handleClick }) {
   return (
     <li className={styles.navigation__item}>
         <Link onClick={() => handleClick()} href={href}>{text}</Link>
-        <Image className={`${pathname === href ? styles.active : ''} star-shape`} src={signStarImg} alt="sign digital star" width={61} height={85} />
+        <div className={styles.starImgContainer}>
+            <Image className={`${pathname === href ? styles.active : ''} star-shape`} src={signStarImg} alt="sign digital star" fill />
+        </div>
     </li>
   )
 }
