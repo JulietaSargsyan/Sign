@@ -3,9 +3,11 @@ import Image from 'next/image'
 import { motion } from 'framer-motion';
 
 import signStarImg from '../../assets/Sign_Star.svg';
+import signStarImgPurple from '../../assets/Sign_Star_Purple.svg';
 import whiteRounds from '../../assets/whiterounds.png';
+import blackRounds from '../../assets/blackRounds.png';
 
-function StarShape() {
+function StarShape({ starColor='white' }) {
   const [move, setMove] = useState(false)
 
   const handleClick = () => {
@@ -21,9 +23,9 @@ function StarShape() {
         transition={{ type:'spring'}}
         onClick={handleClick}
       >
-        <Image src={signStarImg} alt="flkfldf" width={61} height={85} className="star-shape" />
+        <Image src={starColor === 'white' ? signStarImg : signStarImgPurple} alt="flkfldf" width={61} height={85} className="star-shape" />
       </motion.div>
-      <Image src={whiteRounds} alt='ldk'  width={50} height={50} className="star-round" />
+      <Image src={starColor === 'white' ? whiteRounds : blackRounds} alt='ldk'  width={50} height={50} className="star-round" />
     </motion.div>
   )
 }
