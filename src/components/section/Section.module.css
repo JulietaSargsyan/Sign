@@ -129,3 +129,13 @@
     align-items: center;
   }
 }
+
+@media (max-width: 600px) {
+  .section {
+    align-items: center;
+  }
+
+  .meetTheTeam-section {
+    margin-top: 50px;
+  }
+}
