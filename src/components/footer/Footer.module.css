@@ -1,16 +1,18 @@
 .footer {
     display: flex;
     justify-content: space-evenly;
-    padding: 14px 0;
+    align-items: center;
+    padding: 14px 10px;
     background-color: white;
     cursor: none;
+    margin-top: -60px;
 }
 
 .social {
     font-size: clamp(0.85rem, 5vw, 1.25rem);
     font-weight: 400;
     text-decoration-line: underline;
-    color: black
+    color: black;
 }
 
 @media (max-width: 800px) {
@@ -26,6 +28,7 @@
 @media (max-width: 510px) {
     .social {
         font-size: 13px;
+        padding: 0 5px;
     }
 
     .footer p {

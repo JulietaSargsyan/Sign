@@ -89,5 +89,6 @@
 
   .white div {
     background-color: white;
+    mix-blend-mode: difference;
   }
   

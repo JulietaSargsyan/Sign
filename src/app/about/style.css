@@ -4,7 +4,15 @@
 }
 
 .teamPhotoContainer {
+    width: 70vw;
+    height: 600px;
+    position: relative;
     z-index: 3;
+}
+
+.teamPhoto {
+    object-fit: cover;
+    border-radius: 300px 300px 40px 40px;
 }
 
 .meetTheTeam-section__description {
@@ -38,4 +46,56 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-top: 38px;
+}
+
+@media (max-width: 1550px) {
+  .introductionContainer {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 1420px) {
+  .introductionContainer {
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #about-us-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .meetTheTeam-section__description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meetTheTeam-section__description-text {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .teamPhotoContainer {
+    height: 460px;
+  }
+
+  .teamMemberCards {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 100px;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .teamPhotoContainer {
+    height: 360px;
+  }
 }

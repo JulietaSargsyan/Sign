@@ -13,3 +13,10 @@
 .cardContainer h3 {
     margin-bottom: 8px;
 }
+
+
+@media (max-width: 600px) {
+  .cardContainer {
+    align-items: center;
+  }
+}

@@ -9,11 +9,13 @@ import './style.css'
 import Section from '@/src/components/section/Section';
 import Button from '@/src/components/button/Button';
 
-import teamPhoto from '../../assets/Lusin&Juli.png'
+// import teamPhoto from '../../assets/Lusin&Juli.png'
+import teamPhoto from '../../assets/teamPhoto.png'
 import Card from '@/src/components/teamMemberCard/Card';
 import Lusine from '../../assets/Lusine.png'
 import Harutyun from '../../assets/Harutyun.png'
 import Julieta from '../../assets/Julieta.png'
+import dummyUser from '../../assets/dummy-user.png'
 
 const AboutPage = () => {
   const { currentSection, setCurrentSection } = useSection();
@@ -64,7 +66,8 @@ const AboutPage = () => {
           <Image 
             src={teamPhoto} 
             alt='Team photo'
-            sizes="100%"
+            className='teamPhoto'
+            fill
           />
         </div>
         <div className='introductionContainer'>
@@ -80,19 +83,19 @@ const AboutPage = () => {
           <p className='meetTheTeam-section__description-text'>We&apos;re more than a creative team — we&apos;re your collaborators. We partner with brands, big and small, to bring ideas to life with clarity, creativity, and purpose.</p>
         </div>
         <div className='teamMemberCards'>
-          <Card image={Lusine} name='Lusin Sargsyan'       position='Chief Executive Officer/Art Director'/>
-          <Card image={Harutyun} name='Harutyun Yorghanjyan' position='Project Manager'/>
-          <Card image={Julieta} name='Julieta Sargsyan' position='Chief Technology Officer'/>
+          <Card image={dummyUser} name='Lusin Sargsyan'       position='Chief Executive Officer/Art Director'/>
+          <Card image={dummyUser} name='Harutyun Yorghanjyan' position='Project Manager'/>
+          <Card image={dummyUser} name='Julieta Sargsyan'     position='Chief Technology Officer'/>
         </div>
       </Section>
 
-      <Section theme='light' sectionName='whatWeCanDo-section'>
-        <div className="whatWeCanDo-section__container">
-          <p className="upTitle" style={{color: 'black'}}>We&apos;re creative professionals driving<br /> brands to the</p>
-          <h2 className="title" style={{color: 'black'}}>what we do</h2>
-          <p className="desc">Are You Keeping Up?</p>
-        </div>
-        <div className="whatWeCanDo-section__listsSection">
+      <Section theme='light' id='whatWeCanDo-section' sectionName='whatWeCanDo-section'>
+          <div className="whatWeCanDo-section__container">
+            <p className="upTitle" style={{color: 'black'}}>WE&apos;RE TRANSFORMING BRANDS INTO<br />IMPACTFUL EXPERIENCES &</p>
+            <h2 className="title" style={{color: 'black'}}>BRINGING IDEAS TO LIFE</h2>
+            <p className="desc">Let&apos;s build what&apos;s next — together.</p>
+          </div>
+          <div className="whatWeCanDo-section__listsSection">
             <div className="lists-container">
               <div className="lists">
                 <ul>
@@ -114,7 +117,7 @@ const AboutPage = () => {
               <Button  theme='light' text='Explore Our Services' href='/services'/>
             </div>
           </div>
-      </Section>
+        </Section>
     </>
   )
 }
