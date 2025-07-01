@@ -92,3 +92,8 @@
     mix-blend-mode: difference;
   }
   
+  @media (max-width: 770px) {
+    .burgerMenu.isTouch div {
+      box-shadow: 1px 2px 2px #984DE5
+    }
+  }

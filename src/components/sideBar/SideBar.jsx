@@ -18,6 +18,7 @@ function SideBar({ open, handleClick, isTouch }) {
             whileTap={{ scale: 1.1 }}
             className={`${styles.burgerMenu} 
                         ${open ? styles.open : ''}
+                        ${isTouch ? styles.isTouch : ''}
                         ${((currentSection === 'heroSection' || currentSection === 'about-us-section') && !open) ? styles.white : ''}`
                       }
             onClick={handleClick}
