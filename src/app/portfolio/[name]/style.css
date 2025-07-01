@@ -1,0 +1,112 @@
+.client-container {
+    padding: 13% 62px 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-container__heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 74px;
+}
+
+.client-container__description {
+    width: 50%;
+}
+
+.client-container__description-title {
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.client-container__description-text {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 0.6;
+}
+
+.client-container__image {
+    width: 50%;
+    position: relative;
+    height: 364px;
+    margin-right: calc(5vh+62px);
+}
+
+.client-container__image img {
+    object-fit: cover;
+}
+
+.client-container__description-data {
+    width: 100%;
+    margin-top: 28px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.client-container__description-data-title {
+    font-family: 'Mosk';
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.client-container__description-data-text {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.challenge {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    padding: 74px 0;
+}
+
+.challenge h3 {
+    width: 50%;
+    font-family: 'Mosk';
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.challenge p {
+    width: 50%;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.6;
+    text-transform: capitalize;
+}
+
+.gallery-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-item {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item img {
+    object-fit: cover;
+}
+
+.gallery-container-last {
+    margin: 50px 0 100px;
+}

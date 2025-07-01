@@ -24,7 +24,8 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
+      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
     },
     {
       id: 2,
@@ -39,7 +40,8 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
+      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
     },
     {
       id: 3,
@@ -54,7 +56,8 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
+      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
     },
     {
       id: 4,
@@ -69,7 +72,8 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
+      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
     },
     {
       id: 5,
@@ -84,7 +88,8 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
+      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
     },
     {
       id: 6,
@@ -99,6 +104,7 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
+      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
     },
   ];
