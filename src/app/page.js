@@ -69,7 +69,7 @@ export default function HomePage() {
             </p>
             <div className="btnStarShape">
               <div className="heroSection__btns-container">
-                <Button theme='dark' text='see what we do' href='#whatWeveDoneSection' transparent='true'/>
+                <Button theme='dark' text='see what we do' href='/portfolio' transparent='true'/>
                 <Button theme='dark' text='fill client brief' href='https://lusinesargsyan845904.typeform.com/to/nVt3yoYM' openNewTab='true'/>
               </div>
               <StarShape />
