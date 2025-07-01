@@ -6,14 +6,14 @@ import './style.css'
 
 export function generateStaticParams() {
   return portfolioData.map((item) => ({
-    name: item.name,
+    slug: item.slug,
   }));
 }
 
 export default function PortfolioItemPage({ params }) {
-  const { name } = params;
+  const { slug } = params;
 
-  const item = portfolioData.find((item) => item.slug === name);
+  const item = portfolioData.find((item) => item.slug === slug);
 
   if (!item) {
     notFound(); // Show 404 page
