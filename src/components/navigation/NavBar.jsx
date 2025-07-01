@@ -1,9 +1,4 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image';
 import styles from './NavBar.module.css'
-
-import signStarImg from '../../assets/Sign_Star_Purple.svg';
 import NavBarItem from './NavBarItem';
 
 function NavBar({ open, handleClick }) {
