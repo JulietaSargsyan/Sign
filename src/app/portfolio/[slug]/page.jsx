@@ -44,40 +44,34 @@ export default function PortfolioItemPage({ params }) {
           <Image src={item.primaryImage} alt={item.name} fill/>
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${item.bannerImage.src})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-          height: '50vh',
-          width: '100%',
-          position: 'relative',
-        }}>
-        
+      <div className='banner-container'>
+        <Image src={item.bannerImage} alt={item.name}/>
       </div>
       <div className='challenge'>
         <h3>The Challenge</h3>
         <p>{item.challenge}</p>
       </div>
       <div className='gallery-container'>
-        <div className='gallery-item'><Image src={item.images[8]} alt={item.name} fill/></div>
-        <div className='gallery-item'><Image src={item.images[7]} alt={item.name} fill/></div>
-        <div className='gallery-item'><Image src={item.images[6]} alt={item.name} fill/></div>
+        {item.images.slice(0, 3).map((image, index) => {
+          return (
+            <div className='gallery-item' key={index}>
+              <Image src={image} alt={item.name} fill />
+            </div>
+          );
+        })}
       </div>
       <div className='challenge'>
         <h3>The Results</h3>
         <p>{item.result}</p>
       </div>
       <div className='gallery-container'>
-        <div className='gallery-item'><Image src={item.images[5]} alt={item.name} fill/></div>
-        <div className='gallery-item'><Image src={item.images[4]} alt={item.name} fill/></div>
-        <div className='gallery-item'><Image src={item.images[3]} alt={item.name} fill/></div>
-      </div>
-      <div className='gallery-container gallery-container-last'>
-        <div className='gallery-item'><Image src={item.images[2]} alt={item.name} fill/></div>
-        <div className='gallery-item'><Image src={item.images[1]} alt={item.name} fill/></div>
-        <div className='gallery-item'><Image src={item.images[0]} alt={item.name} fill/></div>
+        {item.images.slice(3).map((image, index) => {
+          return (
+            <div className='gallery-item' key={index}>
+              <Image src={image} alt={item.name} fill />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
