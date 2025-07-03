@@ -202,15 +202,27 @@ body {
   margin-top: 80px;
 }
 
-#whatWeveDoneSection a {
-    width: 47%;
+#whatWeveDoneSection a.portfolioItem {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#whatWeveDoneSection a.portfolioItem p {
+  margin: 15px 0 0;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: black;
 }
 
 #whatWeveDoneSection a img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  display: block;
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
@@ -237,12 +249,6 @@ body {
 
 .whatWeCanDo-section__listsSection .lists ul {
   list-style: none;
-}
-
-@media (max-width: 1700px) {
-  #whatWeveDoneSection a {
-      width: 40%;
-  }
 }
 
 @media (max-width: 1180px) {

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { useSection } from '../context/SectionContext';
+import { portfolioData } from '@/lib/data.js';
 
 import Section from "../components/section/Section";
 import Button from "../components/button/Button";
@@ -91,26 +92,14 @@ export default function HomePage() {
           </div>
         </Section>
         <Section theme='light' sectionName='whatWeveDoneSection' id='whatWeveDoneSection'>
-          <div>
-            <Link href='' className="portfolioItem">
-              <Image src={portfolio1} alt="brandName" width={600} height={350}/>
-              <p>Restart Garden</p>
-            </Link>
-            <Link href=''>
-              <Image src={portfolio2} alt="brandName" width={600} height={350}/>
-              <p>Restart Garden</p>
-            </Link>
-          </div>
-          <div>
-            <Link href=''>
-              <Image src={portfolio3} alt="brandName" width={600} height={350}/>
-              <p>Restart Garden</p>
-            </Link>
-            <Link href=''>
-              <Image src={portfolio4} alt="brandName" width={600} height={350}/>
-              <p>Restart Garden</p>
-            </Link>
-          </div>
+          {portfolioData.slice(0, 4).map((item, index) => {
+            return (
+              <Link key={index} href={`/portfolio/${item.slug}`} className="portfolioItem">
+                <Image src={item.primaryImage} alt={item.name} width={600} height={350}/>
+                <p>{item.name}</p>
+              </Link>
+            )
+          })}
         </Section>
         <Section theme='light' id='whatWeCanDo-section' sectionName='whatWeCanDo-section'>
           <div className="whatWeCanDo-section__container">
