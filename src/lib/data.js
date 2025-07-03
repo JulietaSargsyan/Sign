@@ -10,6 +10,11 @@ import consultingGroup7 from '@/assets/consultingGroup/consultingGroup7.png';
 import consultingGroup8 from '@/assets/consultingGroup/consultingGroup8.png';
 import consultingGroup9 from '@/assets/consultingGroup/consultingGroup9.png';
 
+import amigurumiLogo from '@/assets/amigurumi/logo.jpg'
+import amigurumiComingSoon from '@/assets/amigurumi/amigurumiComingSoon.jpg'
+import amigurumiPackage from '@/assets/amigurumi/package.jpg'
+import amigurumiPackage2 from '@/assets/amigurumi/package2.jpg'
+
 export const portfolioData = [
     {
       id: 1,
@@ -24,24 +29,24 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
-      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'Consulting Group approached us with a clear need: to develop a brand identity that would communicate their values of integrity, expertise, and trust in a highly competitive and traditional industry.\nThe challenge was to design visuals that balanced modernity and professionalism, appealing to high-level decision-makers while standing out in a market filled with conservative branding. We needed to craft an identity that felt confident, clean, and credible, without losing the personal touch that defines their consultancy approach.',
+      result: 'We created a refined and strategic brand identity that elevated Consulting Group\'s visual presence. The logo design embodies clarity and strength, while the color palette and typography convey reliability and professionalism.\nThe result is a distinctive, timeless brand that aligns with the firm\'s values and enhances their credibility with new and existing clients. Consulting Group now has a strong visual foundation to support their growth and communicate their leadership in the consultancy space.'
     },
     {
       id: 2,
-      slug: 'consultingGroup',
-      name: 'Consulting group',
-      client: 'Consulting Group LLC',
-      category: 'Branding, Logo Design',
-      date: 'May 2020',
+      slug: 'amigurumi',
+      name: 'Amigurumi',
+      client: 'Amigurumi',
+      category: 'Branding, Logo Design, Package Design',
+      date: 'June 2025',
       location: 'Yerevan, Armenia',
-      title: 'Crafting a Trustworthy Brand Identity for Consulting Group',
-      primaryImage: consultingGroupLogo,
-      bannerImage: consultingGroupBanner,
-      images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
-      content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
-      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      title: 'Crafting a Trustworthy Brand Identity for Amigurumi Toys',
+      primaryImage: amigurumiLogo,
+      bannerImage: amigurumiComingSoon,
+      images: [amigurumiPackage, amigurumiPackage2, amigurumiComingSoon, amigurumiPackage, amigurumiPackage2, amigurumiComingSoon, amigurumiPackage, amigurumiPackage2, amigurumiComingSoon],
+      content: 'Sign Studio had the joy of crafting a playful and heartwarming visual identity for a delightful line of handmade Amigurumi toys. From the logo design to packaging and custom graphic illustrations, every detail was designed to capture the charm, creativity, and softness of these crocheted characters.',
+      challenge: 'The client needed a complete visual identity for their handcrafted Amigurumi toys — something that would reflect the delicate, handmade nature of the products while also appealing to both children and gift-givers. The challenge was to design a playful yet professional brand that could stand out in a competitive, design-driven niche.\n We had to strike the right balance between cute and credible, and ensure that every design element — from logo to packaging — felt personal, warm, and unique.',
+      result: 'We delivered a cohesive brand experience that brought the Amigurumi world to life. The logo communicates charm and friendliness, while the packaging was carefully designed to feel like a gift — simple, colorful, and memorable. Custom illustrations and graphic accents helped create a sense of story and character around the toys.\nThe result is a delightful and professional brand identity that stands out visually and emotionally, helping the client build a stronger connection with their audience.'
     },
     {
       id: 3,
@@ -56,8 +61,8 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
-      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'Consulting Group approached us with a clear need: to develop a brand identity that would communicate their values of integrity, expertise, and trust in a highly competitive and traditional industry.\nThe challenge was to design visuals that balanced modernity and professionalism, appealing to high-level decision-makers while standing out in a market filled with conservative branding. We needed to craft an identity that felt confident, clean, and credible, without losing the personal touch that defines their consultancy approach.',
+      result: 'We created a refined and strategic brand identity that elevated Consulting Group\'s visual presence. The logo design embodies clarity and strength, while the color palette and typography convey reliability and professionalism.\nThe result is a distinctive, timeless brand that aligns with the firm\'s values and enhances their credibility with new and existing clients. Consulting Group now has a strong visual foundation to support their growth and communicate their leadership in the consultancy space.'
     },
     {
       id: 4,
@@ -72,8 +77,8 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
-      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'Consulting Group approached us with a clear need: to develop a brand identity that would communicate their values of integrity, expertise, and trust in a highly competitive and traditional industry.\nThe challenge was to design visuals that balanced modernity and professionalism, appealing to high-level decision-makers while standing out in a market filled with conservative branding. We needed to craft an identity that felt confident, clean, and credible, without losing the personal touch that defines their consultancy approach.',
+      result: 'We created a refined and strategic brand identity that elevated Consulting Group\'s visual presence. The logo design embodies clarity and strength, while the color palette and typography convey reliability and professionalism.\nThe result is a distinctive, timeless brand that aligns with the firm\'s values and enhances their credibility with new and existing clients. Consulting Group now has a strong visual foundation to support their growth and communicate their leadership in the consultancy space.'
     },
     {
       id: 5,
@@ -88,8 +93,8 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
-      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'Consulting Group approached us with a clear need: to develop a brand identity that would communicate their values of integrity, expertise, and trust in a highly competitive and traditional industry.\nThe challenge was to design visuals that balanced modernity and professionalism, appealing to high-level decision-makers while standing out in a market filled with conservative branding. We needed to craft an identity that felt confident, clean, and credible, without losing the personal touch that defines their consultancy approach.',
+      result: 'We created a refined and strategic brand identity that elevated Consulting Group\'s visual presence. The logo design embodies clarity and strength, while the color palette and typography convey reliability and professionalism.\nThe result is a distinctive, timeless brand that aligns with the firm\'s values and enhances their credibility with new and existing clients. Consulting Group now has a strong visual foundation to support their growth and communicate their leadership in the consultancy space.'
     },
     {
       id: 6,
@@ -104,7 +109,7 @@ export const portfolioData = [
       bannerImage: consultingGroupBanner,
       images: [consultingGroup1, consultingGroup2, consultingGroup3, consultingGroup4, consultingGroup5, consultingGroup6, consultingGroup7, consultingGroup8, consultingGroup9],
       content: 'Sign Studio had the privilege of collaborating with Consulting Group, a prominent consultancy firm specializing in providing expert advice on business strategy and decision-making. Our mission was to create a brand identity that would reflect Consulting Group\'s core values of trustworthiness, professionalism, and reliability while making a lasting visual impression.',
-      challenge: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.',
-      result: 'At vero eos et accusamus etiusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate similique sunin culpa qui officia deserunt mollitia animi est laborum et dolorum fuga. Et harum quidem rerum facilis esty expedita distinctio.'
+      challenge: 'Consulting Group approached us with a clear need: to develop a brand identity that would communicate their values of integrity, expertise, and trust in a highly competitive and traditional industry.\nThe challenge was to design visuals that balanced modernity and professionalism, appealing to high-level decision-makers while standing out in a market filled with conservative branding. We needed to craft an identity that felt confident, clean, and credible, without losing the personal touch that defines their consultancy approach.',
+      result: 'We created a refined and strategic brand identity that elevated Consulting Group\'s visual presence. The logo design embodies clarity and strength, while the color palette and typography convey reliability and professionalism.\nThe result is a distinctive, timeless brand that aligns with the firm\'s values and enhances their credibility with new and existing clients. Consulting Group now has a strong visual foundation to support their growth and communicate their leadership in the consultancy space.'
     },
   ];
