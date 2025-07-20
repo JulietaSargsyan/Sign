@@ -12,10 +12,9 @@ import Button from '@/src/components/button/Button';
 // import teamPhoto from '../../assets/Lusin&Juli.png'
 import teamPhoto from '../../assets/teamPhoto.png'
 import Card from '@/src/components/teamMemberCard/Card';
-import Lusine from '../../assets/Lusine.png'
-import Harutyun from '../../assets/Harutyun.png'
-import Julieta from '../../assets/Julieta.png'
-import dummyUser from '../../assets/dummy-user.png'
+import dummyUser1 from '../../assets/dummyUser1.png';
+import dummyUser2 from '../../assets/dummyUser2.png';
+import dummyUser3 from '../../assets/dummyUser3.png';
 
 const AboutPage = () => {
   const { currentSection, setCurrentSection } = useSection();
@@ -83,9 +82,9 @@ const AboutPage = () => {
           <p className='meetTheTeam-section__description-text'>We&apos;re more than a creative team — we&apos;re your collaborators. We partner with brands, big and small, to bring ideas to life with clarity, creativity, and purpose.</p>
         </div>
         <div className='teamMemberCards'>
-          <Card image={dummyUser} name='Lusin Sargsyan'       position='Chief Executive Officer/Art Director'/>
-          <Card image={dummyUser} name='Harutyun Yorghanjyan' position='Project Manager'/>
-          <Card image={dummyUser} name='Julieta Sargsyan'     position='Chief Technology Officer'/>
+          <Card image={dummyUser1} name='John Doe'     position='Chief Executive Officer/Art Director'/>
+          <Card image={dummyUser2} name='Jane Doe'     position='Project Manager'/>
+          <Card image={dummyUser3} name='Emily Sparks' position='Chief Technology Officer'/>
         </div>
       </Section>
 
