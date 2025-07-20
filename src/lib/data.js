@@ -10,10 +10,11 @@ import consultingGroup7 from '@/assets/consultingGroup/consultingGroup7.png';
 import consultingGroup8 from '@/assets/consultingGroup/consultingGroup8.png';
 import consultingGroup9 from '@/assets/consultingGroup/consultingGroup9.png';
 
-import amigurumiLogo from '@/assets/amigurumi/logo.jpg'
+import amigurumiLogo from '@/assets/amigurumi/logo.png'
 import amigurumiComingSoon from '@/assets/amigurumi/amigurumiComingSoon.jpg'
 import amigurumiPackage from '@/assets/amigurumi/package.jpg'
 import amigurumiPackage2 from '@/assets/amigurumi/package2.jpg'
+import amigurumiInstaPost from '@/assets/amigurumi/6.png'
 
 export const portfolioData = [
     {
@@ -43,7 +44,7 @@ export const portfolioData = [
       title: 'Crafting a Trustworthy Brand Identity for Amigurumi Toys',
       primaryImage: amigurumiLogo,
       bannerImage: amigurumiComingSoon,
-      images: [amigurumiPackage, amigurumiPackage2, amigurumiComingSoon, amigurumiPackage, amigurumiPackage2, amigurumiComingSoon, amigurumiPackage, amigurumiPackage2, amigurumiComingSoon],
+      images: [amigurumiPackage, amigurumiPackage2, amigurumiComingSoon, amigurumiInstaPost, amigurumiPackage2, amigurumiComingSoon, amigurumiPackage, amigurumiPackage2, amigurumiComingSoon],
       content: 'Sign Studio had the joy of crafting a playful and heartwarming visual identity for a delightful line of handmade Amigurumi toys. From the logo design to packaging and custom graphic illustrations, every detail was designed to capture the charm, creativity, and softness of these crocheted characters.',
       challenge: 'The client needed a complete visual identity for their handcrafted Amigurumi toys — something that would reflect the delicate, handmade nature of the products while also appealing to both children and gift-givers. The challenge was to design a playful yet professional brand that could stand out in a competitive, design-driven niche.\n We had to strike the right balance between cute and credible, and ensure that every design element — from logo to packaging — felt personal, warm, and unique.',
       result: 'We delivered a cohesive brand experience that brought the Amigurumi world to life. The logo communicates charm and friendliness, while the packaging was carefully designed to feel like a gift — simple, colorful, and memorable. Custom illustrations and graphic accents helped create a sense of story and character around the toys.\nThe result is a delightful and professional brand identity that stands out visually and emotionally, helping the client build a stronger connection with their audience.'
