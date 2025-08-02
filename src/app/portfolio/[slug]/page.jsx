@@ -38,6 +38,14 @@ export default function PortfolioItemPage({ params }) {
               <p className='client-container__description-data-title'>Date/Location</p>
               <p className='client-container__description-data-text'>{item.date}/{item.location}</p>
             </div>
+            {item?.website 
+             ?
+            <div className='client-container__description-data-item'>
+              <p className='client-container__description-data-title'>Website</p>
+              <p className='client-container__description-data-text client-container__description-data-website'><a href={item.website} target='_blank'>{item.websiteTitle}</a></p>
+            </div> 
+             : null
+            }
           </div>
         </div>
         <div className='client-container__image'>
