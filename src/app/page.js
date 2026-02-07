@@ -58,7 +58,7 @@ export default function HomePage() {
     window.addEventListener('wheel', handleWheel, { passive: true });
 
     return () => window.removeEventListener('wheel', handleWheel);
-  }, []);
+  }, [setCurrentSection]);
 
   return (
     <>
