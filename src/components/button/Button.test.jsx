@@ -78,7 +78,7 @@ describe('Button Component', () => {
   it('should detect various file extensions for download', () => {
     const fileExtensions = ['.pdf', '.jpg', '.png', '.zip', '.txt', '.csv', '.json']
     
-    // Render once with all assertions to avoid cleanup issues
+    // Render each file extension with cleanup to avoid memory leaks
     fileExtensions.forEach(ext => {
       const { container, unmount } = render(<Button text="Download" href={`/file${ext}`} theme="primary" />)
       const link = container.querySelector('[download]')
