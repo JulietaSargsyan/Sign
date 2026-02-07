@@ -77,11 +77,13 @@ describe('Button Component', () => {
 
   it('should detect various file extensions for download', () => {
     const fileExtensions = ['.pdf', '.jpg', '.png', '.zip', '.txt', '.csv', '.json']
-
+    
+    // Render once with all assertions to avoid cleanup issues
     fileExtensions.forEach(ext => {
-      const { container } = render(<Button text="Download" href={`/file${ext}`} theme="primary" />)
+      const { container, unmount } = render(<Button text="Download" href={`/file${ext}`} theme="primary" />)
       const link = container.querySelector('[download]')
       expect(link).toBeInTheDocument()
+      unmount() // Clean up after each render
     })
   })
 
@@ -89,7 +91,6 @@ describe('Button Component', () => {
     const { container } = render(<Button text="Wave Effect" href="/" theme="primary" />)
 
     const button = screen.getByRole('button')
-    const wave = container.querySelector('[class*="wave"]')
 
     // Mock getBoundingClientRect
     button.getBoundingClientRect = jest.fn(() => ({
@@ -101,6 +102,9 @@ describe('Button Component', () => {
 
     // Simulate mouse enter at specific coordinates
     fireEvent.mouseEnter(button, { clientX: 25, clientY: 30 })
+
+    // Query wave element after the event is fired
+    const wave = container.querySelector('[class*="wave"]')
 
     // Check if wave has style attributes
     expect(wave).toHaveStyle({ top: '30px', left: '25px' })
