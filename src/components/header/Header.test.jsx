@@ -62,18 +62,4 @@ describe('Header Component', () => {
 
     expect(mockHandleClick).toHaveBeenCalledTimes(1)
   })
-
-  it('should set current section to heroSection when clicked', () => {
-    render(
-      <SectionProvider>
-        <Header handleClick={mockHandleClick} />
-      </SectionProvider>
-    )
-
-    const link = screen.getByRole('link')
-    fireEvent.click(link)
-
-    // The handleClick should have been called
-    expect(mockHandleClick).toHaveBeenCalled()
-  })
 })
