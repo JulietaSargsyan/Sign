@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "export": "next export",
     "deploy": "npm run build && npm run export && git add . && git commit -m 'Deploy to GitHub Pages' && git push"
   },
@@ -17,8 +20,13 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0"
   },
   "homepage": "https://github.com/JulietaSargsyan/Sign"
 }
