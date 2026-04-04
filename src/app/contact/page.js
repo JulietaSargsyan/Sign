@@ -16,18 +16,26 @@ const ContactPage = () => {
   if (!isClient) return null;
 
   return (
-    <Section theme='light' sectionName='contact-us-page' id='contact-us-page'>
-          <div className="contact-us-page__container">
-            <p className="upTitle" style={{color: 'black'}}>In Case That You Have AN IDEA, STARTUP OR<br/> EXISTING BUSINESS AND NEED CONSULTATION </p>
-            <h2 className="title" style={{color: 'black'}}>Contact us</h2>
-            <p className="desc">And be sure that we can  provide best solution for you</p>
-            <div className="contact-us-page__button-container">
-                <Button theme='light' text='Download client briff' href='/Offer.pdf'/>
-            </div>
-          </div>
-          
-        </Section>
-  )
+    <Section theme="light" sectionName="contact-us-page" id="contact-us-page">
+      <div className="contact-us-page__container">
+        <p className="upTitle" style={{ color: "black" }}>
+          In Case That You Have AN IDEA, STARTUP OR
+          <br /> EXISTING BUSINESS AND NEED CONSULTATION{" "}
+        </p>
+        <h2 className="title" style={{ color: "black" }}>
+          Contact us
+        </h2>
+        <p className="desc">
+          And be sure that we can provide best solution for you
+        </p>
+        <div className="contact-us-page__button-container">
+          <p><strong>Email:</strong> signdigital.design@gmail.com</p>
+          <p><strong>Phone:</strong> +374 (98) 458-538</p>
+          {/* <Button theme='light' text='Download client briff' href='/Offer.pdf'/> */}
+        </div>
+      </div>
+    </Section>
+  );
 }
 
 export default ContactPage
