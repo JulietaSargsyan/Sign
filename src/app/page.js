@@ -41,7 +41,7 @@ export default function HomePage() {
       if (direction === 'down') {
         targetSection = sections[currentSectionIndex + 1];
       } else {
-        targetSection = sections[currentSectionIndex - 1];
+        targetSection = sections[currentSectionIndex];
       }
 
       if (targetSection) {
@@ -51,7 +51,7 @@ export default function HomePage() {
 
         setTimeout(() => {
           isScrolling = false;
-        }, 50);
+        }, 800);
       }
     };
 
